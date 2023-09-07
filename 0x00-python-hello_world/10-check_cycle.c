@@ -11,16 +11,16 @@
 int check_cycle(listint_t *list)
 {
 	listint_t *tortoise;
-	listint_t *cheetah, *tmp;
+	listint_t *cheetah;
 
 	if (list == NULL)
 		return (0);
-	tmp = list;
-	while (tmp != NULL)
+	tortoise = list;
+	cheetah = list;
+	while (1)
 	{
-		tortoise = tmp;
-		tmp = tmp->next;
-		cheetah = tmp->next;
+		tortoise = tortoise->next;
+		cheetah = cheetah->next->next;
 		if (cheetah == tortoise)
 			return (1);
 		if (cheetah == NULL || tortoise == NULL)
