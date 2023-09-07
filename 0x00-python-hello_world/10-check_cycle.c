@@ -15,16 +15,18 @@ int check_cycle(listint_t *list)
 
 	if (list == NULL)
 		return (0);
-	tortoise = list;
-	cheetah = list;
+	tortoise = list->next;
+	if (tortoise == NULL)
+		return (0);
+	cheetah = tortoise->next;
 	while (1)
 	{
-		tortoise = tortoise->next;
-		cheetah = cheetah->next->next;
 		if (cheetah == tortoise)
 			return (1);
 		if (cheetah == NULL || tortoise == NULL)
 			return (0);
+		tortoise = tortoise->next;
+		cheetah = cheetah->next->next;
 	}
 	return (0);
 }
