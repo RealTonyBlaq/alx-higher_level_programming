@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
     if sentence == "":
-        sentence[0] is None
-    tuple_s = len(sentence), sentence[0]
-    return tuple_s
+        sen = None
+    else:
+        sen = sentence[0]
+    return (len(sentence), sen)
