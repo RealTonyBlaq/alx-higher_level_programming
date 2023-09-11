@@ -21,8 +21,8 @@ int is_palindrome(listint_t **head)
 		tortoise = tortoise->next;
 		cheetah = cheetah->next->next;
 	}
-	backward = reverse_list(head);
-	while (forward != NULL && backward != NULL)
+	backward = reverse_list(tortoise);
+	while (backward != NULL)
 	{
 		if (forward->n != backward->n)
 			return (0);
@@ -39,10 +39,10 @@ int is_palindrome(listint_t **head)
  * Return: The reversed list
  */
 
-listint_t *reverse_list(listint_t **head)
+listint_t *reverse_list(listint_t *head)
 {
 	listint_t *front = NULL;
-	listint_t *current = *head;
+	listint_t *current = head;
 	listint_t *back = NULL;
 
 	while (current != NULL)
