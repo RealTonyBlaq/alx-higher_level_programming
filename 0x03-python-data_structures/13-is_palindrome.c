@@ -11,9 +11,16 @@
 int is_palindrome(listint_t **head)
 {
 	listint_t *forward = *head, *backward = NULL;
+	listint_t *cheetah = *head, *tortoise = *head;
 
 	if (*head == NULL || (*head)->next == NULL)
 		return (0);
+
+	while (cheetah != NULL && cheetah->next != NULL)
+	{
+		tortoise = tortoise->next;
+		cheetah = cheetah->next->next;
+	}
 	backward = reverse_list(head);
 	while (forward != NULL && backward != NULL)
 	{
