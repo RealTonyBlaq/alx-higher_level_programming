@@ -24,10 +24,10 @@ int is_palindrome(listint_t **head)
 	backward = reverse_list(tortoise);
 	while (backward != NULL)
 	{
-		forward = forward->next;
-		backward = backward->next;
 		if (forward->n != backward->n)
 			return (0);
+		forward = forward->next;
+		backward = backward->next;
 	}
 	return (1);
 }
