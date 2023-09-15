@@ -14,6 +14,7 @@ def multiply_by_2(a_dictionary):
 
     Return: The updated dictionary
     """
+    new = {}
     for u, v in a_dictionary.items():
-        a_dictionary[u] = v * 2
-    return a_dictionary
+        new[u] = v * 2
+    return new
