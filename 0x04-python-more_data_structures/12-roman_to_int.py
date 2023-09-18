@@ -12,7 +12,7 @@ def roman_to_int(roman_string):
 
     Return: The converted number
     """
-    if roman_string == "" or roman_string is None:
+    if roman_string is int or roman_string is None:
         return 0
     intgr = 0
     lenn = len(roman_string)
