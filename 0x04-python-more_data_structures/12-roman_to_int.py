@@ -14,7 +14,7 @@ def roman_to_int(roman_string):
     """
     if roman_string is None:
         return 0
-    if not roman_string:
+    if not str(roman_string):
         return 0
     intgr = 0
     lenn = len(roman_string)
