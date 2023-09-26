@@ -21,4 +21,8 @@ def safe_print_integer_err(value):
         sys.stderr.write("Exception: ")
         sys.stderr.write(err)
         sys.stderr.write("\n")
-        return False
+    except ValueError as er:
+        sys.stderr.write("Exception: ")
+        print(er, file=sys.stderr)
+        sys.stderr.write("\n")
+    return False
