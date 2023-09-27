@@ -1,7 +1,10 @@
 #!/usr/bin/python3
+"""
+Defines a class square
+without methods or instances
 
-# 0-square.py
-""" Defines a class square"""
+"""
+
 
 class Square:
     """ An empty class """
