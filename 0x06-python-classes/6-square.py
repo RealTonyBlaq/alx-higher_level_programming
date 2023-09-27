@@ -25,14 +25,13 @@ class Square:
     def my_print(self):
         """ Prints a square with the letter # of square size (size) """
         if self.__size == 0:
-            print("")
+            print()
         else:
             [print() for k in range(0, self.__position[1])]
             i = self.__size
             while i > 0:
                 print(" " * self.__position[0], end="")
-                print("#" * self.__size, end="")
-                print("")
+                print("#" * self.__size)
                 i -= 1
 
     @property
