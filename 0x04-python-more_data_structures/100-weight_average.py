@@ -11,7 +11,7 @@ def weight_average(my_list=[]):
 
     Return: The weighted average, else 0
     """
-    if my_list is None:
+    if my_list == []:
         return 0
     w_avg = 0
     w_sum = 0
