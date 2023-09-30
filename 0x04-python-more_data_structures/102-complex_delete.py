@@ -12,7 +12,10 @@ def complex_delete(a_dictionary, value):
 
     Return: The dictionary
     """
-    for x, y in a_dictionary.items():
-        if y == value:
-            del (x)
+    for x in range(0, len(a_dictionary)):
+        for y in a_dictionary:
+            if a_dictionary[y] == value:
+                del a_dictionary[y]
+                x += 1
+                break
     return a_dictionary
