@@ -29,10 +29,9 @@ class Square:
                 if k + 1 == self.__position[1]:
                     break
             for i in range(self.__size):
-                    string1 += (" " * self.__position[0])
-                    string1 += ("#" * self.__size)
-                    if i + 1 != self.__size:
-                        string1 += "\n"
+                string1 += (" " * self.__position[0]) + ("#" * self.__size)
+                if i + 1 != self.__size:
+                    string1 += "\n"
             return string1
 
     def area(self):
