@@ -26,12 +26,13 @@ class Square:
             string1 = ""
             for k in range(0, self.__position[1]):
                 string1 += "\n"
+                if k + 1 == self.__position[1]:
+                    break
             for i in range(self.__size):
-                for j in range(self.__position[0]):
-                    string1 += " "
-                for m in range(self.__size):
-                    string1 += "#"
-                string1 += "\n"
+                    string1 += (" " * self.__position[0])
+                    string1 += ("#" * self.__size)
+                    if i + 1 != self.__size:
+                        string1 += "\n"
             return string1
 
     def area(self):
