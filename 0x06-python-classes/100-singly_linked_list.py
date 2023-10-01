@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-""" 
+"""
 Defining a class Node that represents the node of
 a singly linked list
 """
+
 
 class Node:
     """ Node of a singly linked list """
@@ -10,7 +11,7 @@ class Node:
     def __init__(self, data, next_node=None):
         """
         Initializes the Node with two private instance attributes:
-        
+
         args:
         -----
 
@@ -46,6 +47,7 @@ class Node:
         else:
             self.__next_node = value
 
+
 """ Defines a class SinglyLinkedList"""
 
 
@@ -55,7 +57,7 @@ class SinglyLinkedList:
     def __init__(self):
         """ initializes the head list """
         self.head = None
-    
+
     def __str__(self):
         """ Returns a string representation of the list which is printable """
         my_list = ""
