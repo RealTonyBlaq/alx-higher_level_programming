@@ -65,7 +65,9 @@ class Rectangle:
     def bigger_or_equal(rect_1, rect_2):
         """
         Defines a static method that compares two rectangles and
-        returns the biggest rectangle based on area
+        returns the biggest rectangle based on area.
+
+        if the two rectangles' areas are equal, rect_1 is returned
 
         """
         if not isinstance(rect_1, Rectangle):
