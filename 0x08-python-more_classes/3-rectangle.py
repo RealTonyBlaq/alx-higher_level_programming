@@ -61,18 +61,7 @@ class Rectangle:
             return ""
         string = ""
         for i in range(self.__height):
-            string += ("#" * self.__width)
+            string += "#" * self.__width
             if i + 1 != self.__height:
                 string += "\n"
         return string
-
-    def __repr__(self):
-        """ Returns a string with a printable """
-        if self.__width == 0 or self.__height == 0:
-            return ""
-        r_str = ""
-        for i in range(self.__height):
-            r_str += ("#" * self.__width)
-            if i + 1 != self.__height:
-                r_str += "\n"
-        return r_str
