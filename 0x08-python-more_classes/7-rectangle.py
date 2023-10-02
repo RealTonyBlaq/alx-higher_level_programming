@@ -14,7 +14,8 @@ class Rectangle:
                         instances created.
                         increments by 1 during each new instantiation
                         decrements by 1 during each instance deletion
-    print_symbol: initialized to "#", used as a symbol for string representation
+    print_symbol (public): initialized to "#", used as a symbol for string
+                        representation
 
     """
     number_of_instances = 0
@@ -76,7 +77,7 @@ class Rectangle:
             return ""
         string = ""
         for i in range(self.__height):
-            string += Rectangle.print_symbol * self.__width
+            string += str(self.print_symbol) * self.__width
             if i + 1 != self.__height:
                 string += "\n"
         return string
