@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+""" Module for a lookup function """
+
+
 def lookup(obj):
     """
     lookup - Returns a list of available attributes and methods
@@ -13,6 +16,4 @@ def lookup(obj):
 
     Return: A list of attributes
     """
-    return [attri for attri in dir(obj)
-            if not callable(getattr(obj, attri))
-            or callable(getattr(obj, attri))]
+    return dir(obj)
