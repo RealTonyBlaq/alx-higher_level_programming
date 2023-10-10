@@ -17,6 +17,6 @@ def from_json_string(my_str):
     """
     import json as j
 
-    data = j.load(my_str)
+    data = j.loads(my_str)
 
     return data
