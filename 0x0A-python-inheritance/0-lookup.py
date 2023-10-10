@@ -13,4 +13,6 @@ def lookup(obj):
 
     Return: A list of attributes
     """
-    return [attri for attri in dir(obj)]
+    return [attri for attri in dir(obj)
+            if not callable(getattr(obj, attri))
+            or callable(getattr(obj, attri))]
