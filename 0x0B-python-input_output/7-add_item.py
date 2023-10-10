@@ -9,11 +9,13 @@ if __name__ == "__main__":
     saver = __import__('5-save_to_json_file').save_to_json_file
 
     filename = "add_item.json"
+    av.pop(0)
     try:
         my_list = loader(filename)
+        if my_list is None:
+            saver(av, filename)
+        else:
+            my_list.extend(av)
+            saver(my_list, filename)
     except FileNotFoundError:
-        my_list = []
-    finally:
-        for i in range(1, len(av)):
-            my_list.append(av[i])
-        saver(my_list, filename)
+        saver(av, filename)
