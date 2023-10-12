@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-
 """ Module for concatenating arguments to a list """
 
 from sys import argv
+
 
 if __name__ == "__main__":
     loader = __import__('6-load_from_json_file').load_from_json_file
