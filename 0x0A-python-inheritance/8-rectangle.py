@@ -5,9 +5,8 @@ Module for class Rectangle which inherits
 from the BaseGeometry class
 
 """
-
-
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
 
 class Rectangle(BaseGeometry):
     """ Define the class Rectangle """
@@ -20,7 +19,6 @@ class Rectangle(BaseGeometry):
         height: The height of the rectangle
 
         """
-        super().__init__()
         self.integer_validator("width", width)
         self.__width = width
         self.integer_validator("height", height)
