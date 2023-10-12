@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
-""" Module contains an empty class """
+""" Module contains a class """
 
 
 class BaseGeometry:
-    """ Define an empty class """
+    """ Define a class """
 
     def area(self):
         """ Public instance method """
