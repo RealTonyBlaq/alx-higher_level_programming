@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
 Module for class Rectangle which inherits
 from the BaseGeometry class
