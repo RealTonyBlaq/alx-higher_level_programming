@@ -2,7 +2,7 @@
 
 """ Module for concatenating arguments to a list """
 
-from sys import argv as av
+from sys import argv
 
 if __name__ == "__main__":
     loader = __import__('6-load_from_json_file').load_from_json_file
@@ -12,8 +12,7 @@ if __name__ == "__main__":
     my_list = []
     try:
         my_list = loader(filename)
-        for i in range(1, len(av)):
-            my_list.append(av[i])
+        my_list.extend(argv[1:])
         saver(my_list, filename)
     except FileNotFoundError:
         saver(my_list, filename)
