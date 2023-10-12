@@ -13,11 +13,12 @@ class Rectangle(BaseGeometry):
         """
         Initializes the private attributes:
 
+        args:
+        ----
         width: The width of the rectangle
         height: The height of the rectangle
 
         """
-        super().__init__()
         self.integer_validator("width", width)
         self.__width = width
         self.integer_validator("height", height)
