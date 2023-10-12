@@ -6,9 +6,13 @@ saver = __import__('5-save_to_json_file').save_to_json_file
 
 
 filename = "add_item.json"
+argv.pop(0)
 try:
     my_list = loader(filename)
+    if my_list is None:
+        saver(argv, filename)
+    else:
+        my_list.extend(argv)
+        saver(my_list, filename)
 except FileNotFoundError:
-    my_list = []
-my_list.extend(argv[1:])
-saver(my_list, filename)
+    saver(argv, filename)
