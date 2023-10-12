@@ -14,7 +14,7 @@ class Rectangle(BaseGeometry):
     def __init__(self, width, height):
         """
         Initializes the private attributes:
-        
+
         width: The width of the rectangle
         height: The height of the rectangle
 
