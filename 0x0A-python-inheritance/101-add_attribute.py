@@ -12,7 +12,7 @@ def add_attribute(a_class, name, value=""):
     name: Object
     value: @name's value
     """
-    if not hasattr(a_class, "__dict__") and not hasattr(a_class, "__slots__"):
+    if not hasattr(a_class, "__dict__") or hasattr(a_class, "__slots__"):
         raise TypeError("can't add new attribute")
     if not hasattr(a_class, name):
         setattr(a_class, name, value)
