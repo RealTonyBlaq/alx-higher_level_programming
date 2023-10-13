@@ -7,7 +7,7 @@ class MyInt(int):
 
     def __eq__(self, other):
         """
-        Returns (inverted):
+        Return (inverted):
         --------
         True: if self != other
         False: if self == other
@@ -16,7 +16,7 @@ class MyInt(int):
 
     def __ne__(self, other):
         """
-        Returns (inverted):
+        Return (inverted):
         --------
         True: if self == other
         False: if self != other
