@@ -1,11 +1,5 @@
 #!/usr/bin/python3
-
-"""
-Module for class Rectangle which inherits
-from the BaseGeometry class
-
-"""
-
+""" Module for class Rectangle which inherits from the BaseGeometry class """
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
@@ -15,6 +9,7 @@ class Rectangle(BaseGeometry):
 
     def __init__(self, width, height):
         """ Initializes the private attributes """
+        super().__init__()
         self.integer_validator("width", width)
         self.__width = width
         self.integer_validator("height", height)
@@ -26,4 +21,4 @@ class Rectangle(BaseGeometry):
 
     def area(self):
         """ Returns the area of a Rectangle """
-        return self.__height * self.__height
+        return self.__height * self.__width
