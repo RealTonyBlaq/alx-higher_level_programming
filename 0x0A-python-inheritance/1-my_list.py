@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """  Child class (Mylist) inherits from List """
 
 
@@ -8,4 +7,4 @@ class MyList(list):
 
     def print_sorted(self):
         """ prints a sorted list """
-        print(sorted(list))
+        print(sorted(self))
