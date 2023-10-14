@@ -41,11 +41,7 @@ class Student:
 
     def reload_from_json(self, json):
         """ Replaces all the attributes of a student instance from a dict """
-        if json != {} and json is not None:
-            old_dict = self.to_json()
-            for attribute in old_dict:
-                delattr(self, attribute)
-            for attr, value in json.items:
-                if not hasattr(self, attr):
+        if json and isinstance(json, dict):
+            for attr, value in json.items():
+                if hasattr(self, attr):
                     setattr(self, attr, value)
-
