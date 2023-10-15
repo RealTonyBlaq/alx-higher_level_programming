@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Module """
+""" Module for add_attribute """
 
 
 def add_attribute(a_class, name, value=""):
