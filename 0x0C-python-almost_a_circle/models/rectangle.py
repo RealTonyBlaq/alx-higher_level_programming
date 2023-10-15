@@ -3,6 +3,7 @@
 
 from models.base import Base
 
+
 class Rectangle(Base):
     """ Define a child class Rectangle """
 
@@ -25,8 +26,6 @@ class Rectangle(Base):
     @width.setter
     def width(self, value):
         """ Sets the value for width """
-        if value < 0:
-            raise ValueError("width must be >= 0")
         self.__width = value
 
     @property
@@ -37,20 +36,16 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         """ Sets the height """
-        if value < 0:
-            raise ValueError("height must be >= 0")
         self.__height = value
 
     @property
     def x(self):
         """ Retrieves x """
         return self.__x
-    
+
     @x.setter
     def x(self, value):
         """ Sets x to value """
-        if value < 0:
-            raise ValueError("x must be >= 0")
         self.__x = value
 
     @property
@@ -61,8 +56,6 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         """ Sets y to value """
-        if value < 0:
-            raise ValueError("y must be >= 0")
         self.__y = value
 
     @property
@@ -73,6 +66,4 @@ class Rectangle(Base):
     @id.setter
     def id(self, value):
         """ Sets id to value """
-        if value < 0:
-            raise ValueError("id must be >= 0")
         self.__id = value
