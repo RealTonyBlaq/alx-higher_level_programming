@@ -9,7 +9,7 @@ def pascal_triangle(n):
 
     Parameter:
 
-    @n: Number of times
+    @n: Number of rows
     ---------------
 
     Return: A list of lists (Matrix)
