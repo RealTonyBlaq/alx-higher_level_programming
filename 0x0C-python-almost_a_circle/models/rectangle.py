@@ -118,3 +118,8 @@ class Rectangle(Base):
     def display(self):
         """ Prints the rectangle using '#' to stdout """
         print(("\n").join(("#" * self.__width) for i in range(self.__height)))
+
+    def __str__(self):
+        """ Returns the string representation of Rectangle """
+        return "[Rectangle] ({}) {}/{} - {}/{}"\
+            .format(self.__id, self.__x, self.__y, self.__width, self.__height)
