@@ -110,3 +110,7 @@ class Rectangle(Base):
     def id(self, value):
         """ Sets id to value """
         self.__id = value
+
+    def area(self):
+        """ Returns the area of a rectangle """
+        return self.__height * self.__width
