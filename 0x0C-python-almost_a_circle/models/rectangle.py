@@ -117,7 +117,11 @@ class Rectangle(Base):
 
     def display(self):
         """ Prints the rectangle using '#' to stdout """
-        print(("\n").join(("#" * self.__width) for i in range(self.__height)))
+        [print() for i in range(self.__y)]
+        for i in range(self.__height):
+            print(" " * self.__x + "#" * self.__width, end="")
+            if i < self.__height:
+                print()
 
     def __str__(self):
         """ Returns the string representation of Rectangle """
