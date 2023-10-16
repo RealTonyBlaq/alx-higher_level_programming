@@ -92,7 +92,7 @@ class Base:
             for obj in list_objs:
                 if cls.__name__ == "Rectangle":
                     my_list = [obj.id, obj.width, obj.height, obj.x, obj.y]
-                else:
+                if cls.__name__ == "Square":
                     my_list = [obj.id, obj.size, obj.x, obj.y]
             with open(filename, "w", encoding='utf-8') as file:
                 format = csv.writer(file)
