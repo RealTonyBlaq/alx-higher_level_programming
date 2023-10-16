@@ -77,7 +77,7 @@ class Base:
         try:
             with open(filename, encoding='utf-8') as f:
                 f_read = f.read()
-        except FileExistsError:
+        except FileNotFoundError:
             return []
         json_list = Base.from_json_string(f_read)
         return map(lambda x: cls.create(**x), json_list)
