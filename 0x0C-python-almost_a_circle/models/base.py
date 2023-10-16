@@ -47,6 +47,6 @@ class Base:
                 f.write(cls.to_json_string(list
                         (map(lambda y: y.to_dictionary(), list_objs))))
         else:
-            empty = []
+            empty = "[]"
             with open(filename, "w", encoding='utf-8') as f:
                 f.write(empty)
