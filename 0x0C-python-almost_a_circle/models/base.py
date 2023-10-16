@@ -88,7 +88,7 @@ class Base:
     def save_to_file_csv(cls, list_objs):
         """ Serializes in CSV"""
         filename = cls.__name__ + ".csv"
-        if list_objs is not None and len(list_objs) != 0:
+        if list_objs is not None:
             for obj in list_objs:
                 if cls.__name__ == "Rectangle":
                     my_list = [obj.id, obj.width, obj.height, obj.x, obj.y]
