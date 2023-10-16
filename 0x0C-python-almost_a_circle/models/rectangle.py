@@ -127,3 +127,11 @@ class Rectangle(Base):
         """ Returns the string representation of Rectangle """
         return "[Rectangle] ({}) {}/{} - {}/{}"\
             .format(self.__id, self.__x, self.__y, self.__width, self.__height)
+
+    def update(self, *args):
+        """ Updates the Rectangle attributes with *args """
+        attrs = ["self.__id", "self.__width", "self.__height", "self.__x", "self.__y"]
+        i = 0
+        for value in args:
+            setattr(self, attrs[i], value)
+            i += 1
