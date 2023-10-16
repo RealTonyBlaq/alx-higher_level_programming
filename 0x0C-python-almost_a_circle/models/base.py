@@ -42,7 +42,7 @@ class Base:
         list_objs: List of instances
         """
         filename = cls.__name__ + ".json"
-        if list_objs is not None:
+        if list_objs:
             a_list = []
             for attr in list_objs:
                 a_list.append(attr.to_dictionary())
