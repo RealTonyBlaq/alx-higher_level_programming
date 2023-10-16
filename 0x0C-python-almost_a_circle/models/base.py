@@ -26,7 +26,9 @@ class Base:
 
         list_dictionaries: A dictionary
         """
-        if list_dictionaries is None or len(list_dictionaries) == 0:
+        if list_dictionaries is None \
+                or len(list_dictionaries) == 0 \
+                or not isinstance(list_dictionaries, list):
             return []
         return json.dumps(list_dictionaries)
 
