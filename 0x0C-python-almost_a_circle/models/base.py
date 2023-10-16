@@ -42,10 +42,12 @@ class Base:
         list_objs: List of instances
         """
         filename = cls.__name__ + ".json"
-        if list_objs is not None and len(list_objs) != 0:
+        if list_objs is not None:
+            a_list = []
+            for attr in list_objs:
+                a_list.append(attr.to_dictionary())
             with open(filename, "w", encoding='utf-8') as f:
-                f.write(Base.to_json_string(list
-                        (map(lambda y: y.to_dictionary(), list_objs))))
+                f.write(Base.to_json_string(a_list))
         else:
             empty = "[]"
             with open(filename, "w", encoding='utf-8') as f:
