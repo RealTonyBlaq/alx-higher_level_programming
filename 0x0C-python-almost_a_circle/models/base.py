@@ -52,3 +52,10 @@ class Base:
             empty = None
             with open(filename, "w", encoding='utf-8') as f:
                 f.write(Base.to_json_string(empty))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """ Returns a list of the json string """
+        if json_string is None or json_string == "":
+            return []
+        return json.loads(json_string)
