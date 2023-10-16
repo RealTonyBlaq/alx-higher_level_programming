@@ -49,6 +49,6 @@ class Base:
             with open(filename, "w", encoding='utf-8') as f:
                 f.write(Base.to_json_string(a_list))
         else:
-            empty = "[]"
+            empty = None
             with open(filename, "w", encoding='utf-8') as f:
-                f.write(empty)
+                f.write(Base.to_json_string(empty))
