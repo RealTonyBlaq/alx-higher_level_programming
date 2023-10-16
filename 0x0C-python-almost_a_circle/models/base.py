@@ -65,8 +65,8 @@ class Base:
         """ Returns an instance with attributes already set """
         if dictionary is not None:
             if cls.__name__ == "Rectangle":
-                dummy = cls(id=14, width=6, height=2, x=4, y=2)
+                dummy = cls(14, 6, 2, 4, 2)
             elif cls.__name__ == "Square":
-                dummy = cls(id=14, size=6, x=4, y=2)
+                dummy = cls(14, 6, 4, 2)
             dummy.update(**dictionary)
             return dummy
