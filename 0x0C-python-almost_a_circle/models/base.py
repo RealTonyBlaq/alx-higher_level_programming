@@ -105,10 +105,18 @@ class Base:
     def load_from_file_csv(cls):
         """ Deserializes in csv """
         filename = cls.__name__ + ".csv"
-        deserialize = []
-        if os.path.exists(filename):
-            with open(filename) as file:
-                data = csv.reader(file)
-                for row in data:
-                    deserialize.append(row)
-        return deserialize
+        with open(filename, "r") as file:
+            if cls.__name__ == "Rectangle":
+                reader = csv.DictReader(
+                    file, fieldnames={'id', 'width', 'height', 'x', 'y'})
+            elif cls.__name__ == "Square":
+                reader = csv.DictReader(
+                    file, fieldnames={'id', 'size', 'x', 'y'})
+
+            instances = []
+            for instance in reader:
+                instance = {x: int(y) for x, y in instance.items()}
+                temp = cls.create(**instance)
+                instances.append(temp)
+
+        return instances
