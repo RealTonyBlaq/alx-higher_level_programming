@@ -2,6 +2,8 @@
 """ Module for class Base """
 
 import json
+import csv
+import os
 
 
 class Base:
@@ -81,3 +83,32 @@ class Base:
             return list(map(lambda x: cls.create(**x), json_list))
         except FileNotFoundError:
             return []
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """ Serializes in CSV"""
+        filename = cls.__name__ + ".csv"
+        if list_objs is not None and len(list_objs) != 0:
+            for obj in list_objs:
+                if cls.__name__ == "Rectangle":
+                    my_list = [obj.id, obj.width, obj.height, obj.x, obj.y]
+                else:
+                    my_list = [obj.id, obj.size, obj.x, obj.y]
+            with open(filename, "w", encoding='utf-8') as file:
+                format = csv.writer(file)
+                format.writerow(my_list)
+        else:
+            with open(filename, "w", encoding='utf-8') as file:
+                file.write("[]")
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """ Deserializes in csv """
+        filename = cls.__name__ + ".csv"
+        deserialize = []
+        if os.path.exists(filename):
+            with open(filename) as file:
+                data = csv.reader(file)
+                for row in data:
+                    deserialize.append(row)
+        return deserialize
