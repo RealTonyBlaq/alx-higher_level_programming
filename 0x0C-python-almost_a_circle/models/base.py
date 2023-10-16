@@ -64,8 +64,8 @@ class Base:
     def create(cls, **dictionary):
         """ Returns an instance with attributes already set """
         if cls.__name__ == "Rectangle":
-            dummy = cls(14, 6, 10, 1, 2)
+            dummy = cls(14, 6)
         elif cls.__name__ == "Square":
-            dummy = cls(14, 10, 1, 2)
+            dummy = cls(14)
         dummy.update(**dictionary)
         return dummy
