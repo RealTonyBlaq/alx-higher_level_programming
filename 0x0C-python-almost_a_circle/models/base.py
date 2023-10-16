@@ -2,7 +2,6 @@
 """ Module for class Base """
 
 import json
-import os
 
 
 class Base:
@@ -75,9 +74,10 @@ class Base:
     def load_from_file(cls):
         """ Returns a list of instances """
         filename = cls.__name__ + ".json"
-        if os.path.exists(filename):
+        try:
             with open(filename, encoding='utf-8') as f:
                 f_read = f.read()
             json_list = Base.from_json_string(f_read)
             return list(map(lambda x: cls.create(**x), json_list))
-        return []
+        except FileNotFoundError:
+            return []
