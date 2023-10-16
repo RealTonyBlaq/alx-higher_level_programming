@@ -154,3 +154,11 @@ class Rectangle(Base):
                     self.__x = val
                 if name == "y":
                     self.__y = val
+
+    def to_dictionary(self):
+        """ Returns the dictionary representation of Rectangle """
+        dic = {}
+        for key in ["x", "y", "id", "height", "width"]:
+            value = getattr(self, key)
+            dic[key] = value
+        return dic
