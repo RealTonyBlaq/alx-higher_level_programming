@@ -4,6 +4,7 @@
 import json
 import csv
 import os
+import turtle
 
 
 class Base:
@@ -120,3 +121,25 @@ class Base:
                 instances.append(temp)
 
         return instances
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """ Draws rectangles and squares """
+        screen = turtle.Screen()
+        pen = turtle.Turtle()
+        pen.speed(1)
+
+        for rect in list_rectangles:
+            width, height = rect
+            for _ in range(2):
+                turtle.forward(width)
+                turtle.left(90)
+                turtle.forward(height)
+                turtle.left(90)
+
+        for size in list_squares:
+            for _ in range(4):
+                turtle.forward(size)
+                turtle.left(90)
+
+        screen.exitonclick()
