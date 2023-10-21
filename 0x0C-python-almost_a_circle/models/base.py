@@ -124,7 +124,7 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
-        """ Draws rectangles and squares """
+        """ Draws rectangles and squares using the Turtle module """
         screen = turtle.Screen()
         pen = turtle.Turtle()
         pen.speed(1)
