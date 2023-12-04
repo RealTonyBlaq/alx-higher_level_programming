@@ -7,7 +7,7 @@ INNER JOIN (
 	INNER JOIN tv_shows
 	ON tv_shows.id = tv_show_genres.show_id
 	WHERE tv_shows.title = 'Dexter'
-)
-ON tv_genres.genre_id = genre_id
+) AS new_table
+ON tv_genres.genre_id = new_table
 ORDER BY tv_genres.name ASC;
 
