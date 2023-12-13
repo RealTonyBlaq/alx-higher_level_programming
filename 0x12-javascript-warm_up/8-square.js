@@ -6,9 +6,7 @@ const size = parseInt(process.argv[2]);
 if (!isNaN(size)) {
   let i = 0;
   while (i < size) {
-    for (let k = 0; k < size; k++) {
-        console.log('X', "");
-    }
+        console.log('X'.repeat(size));
     i++;
   }
 } else {
