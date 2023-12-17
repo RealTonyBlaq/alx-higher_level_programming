@@ -2,7 +2,7 @@
 /* Script finds the maximum number in the list of arguments */
 
 const argList = [];
-if (!isNaN(process.argv[2])) {
+if (process.argv.length - 2 >= 2) {
   let i = 2;
   while (process.argv[i]) {
     argList.push(Number(process.argv[i]));
