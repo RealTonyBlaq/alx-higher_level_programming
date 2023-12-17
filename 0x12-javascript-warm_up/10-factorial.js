@@ -10,3 +10,10 @@ function factorial (n) {
   }
 }
 
+const arg = process.argv[2];
+
+if (!NaN(arg)) {
+  console.log(factorial(arg));
+} else {
+    return 1;
+}
