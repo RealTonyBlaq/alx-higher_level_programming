@@ -8,6 +8,7 @@ if (!isNaN(process.argv[2])) {
     i++;
   }
   let maxNumber = Math.max(...arg_list);
+  let args = arg_list.filter(arg_list => arg_list !== maxNumber);
 } else {
     console.log(0);
 }
