@@ -3,9 +3,11 @@
 
 let arg_list = [];
 if (!isNaN(process.argv[2])) {
-  for (let i = 2; i >= 2; i++) {
-    arg_list.push(process.argv);
+  while (process.argv[i]) {
+    arg_list.push(process.argv[i]);
+    i++;
   }
+  let maxNumber = Math.max(...arg_list);
 } else {
-    
+    console.log(0);
 }
