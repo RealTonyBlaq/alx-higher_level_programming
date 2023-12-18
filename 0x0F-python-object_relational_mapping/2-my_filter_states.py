@@ -4,6 +4,7 @@ Script queries a database using MySQLdb
 retrieves data from the table 'states' in a database
 where 'name' column has a string value passed as the
 fourth argument, sorted by 'id' value in ascending order
+
 """
 
 import MySQLdb
