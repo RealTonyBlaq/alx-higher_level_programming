@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-""" Script queries a database to retrieve """
+"""
+Script queries a database using MySQLdb
+retrieves data from a table s
+"""
 
 import MySQLdb
 from sys import argv
