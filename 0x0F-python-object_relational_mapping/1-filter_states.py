@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-
-""" Module """
-
+""" Script uses MySQLdb module to query a database """
 
 import MySQLdb
 from sys import argv
