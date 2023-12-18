@@ -10,7 +10,8 @@ if __name__ == "__main__":
     cur = database.cursor()
     cur.execute("SELECT *\
                 FROM states\
-                WHERE name = '{}'")
+                WHERE name = '{}'\
+                ORDER BY states.id ASC;".format(argv[]))
     data = cur.fetchall()
     for row in data:
         print(row)
