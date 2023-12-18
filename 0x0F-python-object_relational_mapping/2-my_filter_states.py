@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """
 Script queries a database using MySQLdb
-retrieves data from a table s
+retrieves data from a table states in a database
+where name column has a string value passed as the
+fourth argument
 """
 
 import MySQLdb
