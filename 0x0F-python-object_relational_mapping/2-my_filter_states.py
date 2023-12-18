@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """
 Script queries a database using MySQLdb
-retrieves data from a table states in a database
-where name column has a string value passed as the
-fourth argument
+retrieves data from the table 'states' in a database
+where 'name' column has a string value passed as the
+fourth argument, sorted by 'id' value in ascending order
 """
 
 import MySQLdb
