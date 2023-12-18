@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Module """
+""" Script queries a database to retrieve """
 
 import MySQLdb
 from sys import argv
@@ -11,7 +11,7 @@ if __name__ == "__main__":
     cur.execute("SELECT *\
                 FROM states\
                 WHERE name = '{}'\
-                ORDER BY states.id ASC;".format(argv[]))
+                ORDER BY states.id ASC;".format(argv[4]))
     data = cur.fetchall()
     for row in data:
         print(row)
