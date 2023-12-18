@@ -1,5 +1,11 @@
 #!/usr/bin/python3
-""" Script uses MySQLdb module to query a database """
+"""
+Script uses MySQLdb module to query a database
+It selects all values from a table called 'states'
+where values in the 'name' column starts with a
+capital 'N' and sorts it by their 'id' value in
+ascending order.
+"""
 
 import MySQLdb
 from sys import argv
