@@ -9,4 +9,8 @@ if __name__ == "__main__":
                                passwd=argv[1], db=argv[3])
     cur = database.cursor()
     cur.execute('SELECT *\
-                FROM states')
+                FROM states\
+                ')
+    data = cur.fetchall()
+    for row in data:
+        
