@@ -2,8 +2,8 @@
 """
 Script queries a database using MySQLdb
 retrieves data from two tables 'states' and 'cities' in a database
-by joining the two tables and accessing their keys
-sorted by 'cities.id' value in ascending order
+to find the cities in the 'state' passed as the 4th argument to the
+script
 
 """
 
