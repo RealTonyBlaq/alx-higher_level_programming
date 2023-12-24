@@ -6,18 +6,19 @@ retrieve the first row
 """
 
 from model_state import Base, State
-from sqlalchemy import create_engine, select
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 from sys import argv
 
 if __name__ == "__main__":
     engine = create_engine("mysql://{}:{}@localhost/{}"
                            .format(argv[1], argv[2], argv[3]),
                            pool_pre_ping=True)
-    conn = engine.connect()
-    statement = select(State).where(State.id == 1)
-    result = conn.execute(statement)
-    if result == ():
+    Session = sessionmaker(engine)
+    session = Session()
+
+    result = session.query(State).first()
+    if result is None:
         print()
     else:
-        for row in result:
-            print("{}: {}".format(row[0], row[1]))
+        print("{}: {}".format(result.id, result.name))
