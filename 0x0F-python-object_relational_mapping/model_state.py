@@ -16,9 +16,9 @@ class States(Base):
 
     __tablename__ (str): name of the table
     id (int): An auto-generated column with unique values
-    name (string): 
+    name (string): A column with string values which cannot be null
     """
     __tablename__ = "states"
     id = Column("id", Integer, unique=True, nullable=False,
-            primary_key=True)
+                primary_key=True)
     name = Column("name", String(128), nullable=False)
