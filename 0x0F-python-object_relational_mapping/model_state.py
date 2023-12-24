@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Module """
+""" Script uses sqlalchemy module to create a table in a database """
 
 from sqlalchemy import Table, String, MetaData, Integer, Column
 from sqlalchemy.ext.declarative import declarative_base
