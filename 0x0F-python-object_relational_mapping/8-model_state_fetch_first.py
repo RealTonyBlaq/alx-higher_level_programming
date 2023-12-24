@@ -18,6 +18,10 @@ if __name__ == "__main__":
     session = Session()
 
     result = session.query(State).first()
+    """
+    session creates an instance of the class State with with results
+    result in this case is an instance of State
+    """
     if result is None:
         print("Nothing")
     else:
