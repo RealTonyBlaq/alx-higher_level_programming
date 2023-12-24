@@ -5,7 +5,7 @@ from sqlalchemy import Table, String, MetaData, Integer, Column
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine
 
-engine = create_engine('mysql://root:root@localhost/hbtn_0e_6_usa', pool_pre_ping=True)
+engine = create_engine('mysql://root:root@localhost/hbtn_0e_6_usa', pool_pre_ping=True, port=3306)
 Base = declarative_base()
 meta = MetaData()
 
