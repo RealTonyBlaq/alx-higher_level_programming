@@ -11,7 +11,7 @@ table = Table("new", metadata,
               Column('id', Integer, primary_key=True),
               Column('name', String(50)),
               Column('email', String(70)))
-metadata.create_all(bind=False)
+metadata.create_all()
 result = metadata.tables()
 for row in result:
     print(f'my table: {row}')
