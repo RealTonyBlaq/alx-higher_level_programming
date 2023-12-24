@@ -17,4 +17,4 @@ if __name__ == "__main__":
     statement = select(State)
     result = conn.execute(statement)
     for row in result:
-        print(row)
+        print("{}: {}".format(row[0], row[1]))
