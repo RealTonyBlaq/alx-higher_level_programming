@@ -11,6 +11,7 @@ table = Table("new", metadata,
               Column('id', Integer, primary_key=True),
               Column('name', String(50)),
               Column('email', String(70)))
-result = engine.execute('SELECT * FROM new')
+metadata.create_all()
+result = metadata.ta
 for row in result:
     print(row)
