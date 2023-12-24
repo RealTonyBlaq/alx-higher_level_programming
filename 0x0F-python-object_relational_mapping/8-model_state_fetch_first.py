@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     result = session.query(State).first()
     """
-    session creates an instance of the class State with with results
+    session creates an instance of the class State with the query results
     result in this case is an instance of State
     """
     if result is None:
