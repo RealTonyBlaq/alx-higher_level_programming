@@ -5,14 +5,18 @@ from sqlalchemy import Table, String, MetaData, Integer, Column
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine
 
-engine = create_engine('mysql://root:root@localhost/hbtn_0e_6_usa', pool_pre_ping=True, port=3306)
+engine = create_engine('mysql://root:root@localhost:3306', pool_pre_ping=True)
 Base = declarative_base()
 meta = MetaData()
 
-class States(Base):
-    """ Defining a class States which inherits from Base """
-    id = Column("id", Integer, unique=True, nullable=False,
-               primary_key=True)
-    name = Column("name", String(128), nullable=False)
+    """ Allows code to be imported before calling """
+
+
+    class States(Base):
+        """ Defining a class States which inherits from Base """
+        __tablename__ = "states"
+        id = Column("id", Integer, unique=True, nullable=False,
+                primary_key=True)
+        name = Column("name", String(128), nullable=False)
 
 Base.metadata.create_all(engine)
