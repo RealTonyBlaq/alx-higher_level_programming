@@ -11,7 +11,11 @@ class States(Base):
     """
     Defining a class States which inherits from Base
 
-    
+    class attributes:
+    -----------------
+
+    __tablename__: name of the table (str)
+    id
     """
     __tablename__ = "states"
     id = Column("id", Integer, unique=True, nullable=False,
