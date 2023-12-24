@@ -13,4 +13,4 @@ class States(Base):
     """ Defining a class States which inherits from Base """
     id = Column("id", meta, Integer, unique=True, nullable=False,
                primary_key=True)
-    name = 
+    name = Column("")
