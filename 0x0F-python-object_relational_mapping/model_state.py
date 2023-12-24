@@ -4,6 +4,5 @@ from sqlalchemy import Table, String, MetaData, Integer
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine
 
-engine = create_engine('mysql://root:root@localhost/')
-
-
+engine = create_engine('mysql://root:root@localhost/hbtn_0e_6_usa', pool_pre_ping=True)
+Base = de
