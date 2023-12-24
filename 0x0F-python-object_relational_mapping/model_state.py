@@ -9,8 +9,8 @@ engine = create_engine('mysql://root:root@localhost/hbtn_0e_6_usa', pool_pre_pin
 Base = declarative_base()
 meta = MetaData()
 
-class States(Base):
+class States(Base, meta):
     """ Defining a class States which inherits from Base """
-    id = Column("id", meta, Integer, unique=True, nullable=False,
+    id = Column("id", Integer, unique=True, nullable=False,
                primary_key=True)
-    name = Column("")
+    name = Column("name", )
