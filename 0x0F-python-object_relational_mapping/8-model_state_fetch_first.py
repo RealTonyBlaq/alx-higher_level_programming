@@ -16,5 +16,8 @@ if __name__ == "__main__":
     conn = engine.connect()
     statement = select(State).where(State.id == 1)
     result = conn.execute(statement)
-    for row in result:
-        print("{}: {}".format(row[0], row[1]))
+    if result == ():
+        print()
+    else:
+        for row in result:
+            print("{}: {}".format(row[0], row[1]))
