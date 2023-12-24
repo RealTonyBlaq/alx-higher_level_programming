@@ -9,7 +9,7 @@ Base = declarative_base()
 
 class State(Base):
     """
-    Defining a class States which inherits from Base
+    Defining a class State which inherits from Base
 
     class attributes:
     -----------------
