@@ -2,7 +2,7 @@
 
 from sqlalchemy import create_engine, MetaData, Table, Column, String, Integer
 
-engine = create_engine("mysql://root:root@localhost/database")
+engine = create_engine("mysql://root:root@localhost/database", pool_pre_ping=True)
 
 metadata = MetaData()
 
