@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" Script qu"""
+""" Script queries a database """
+
 from model_state import Base, State
 from sqlalchemy import create_engine, MetaData, select
 from sys import argv
