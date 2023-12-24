@@ -14,8 +14,9 @@ class States(Base):
     class attributes:
     -----------------
 
-    __tablename__: name of the table (str)
-    id
+    __tablename__ (str): name of the table
+    id (int): An auto-generated column with unique values
+    name (string): 
     """
     __tablename__ = "states"
     id = Column("id", Integer, unique=True, nullable=False,
