@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Script queries a database using table objects to
-retrieve the rows
+retrieve the first row
 
 """
 
