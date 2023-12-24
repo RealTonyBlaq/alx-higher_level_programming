@@ -5,8 +5,14 @@ from sqlalchemy import Table, String, MetaData, Integer, Column
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
+
+
 class States(Base):
-    """ Defining a class States which inherits from Base """
+    """
+    Defining a class States which inherits from Base
+
+    
+    """
     __tablename__ = "states"
     id = Column("id", Integer, unique=True, nullable=False,
             primary_key=True)
