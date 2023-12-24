@@ -11,4 +11,5 @@ meta = MetaData()
 
 class States(Base):
     """ Defining a class States which inherits from Base """
-    id = Table("id", meta, )
+    id = Table("id", meta, Integer, unique=True, nullable=False,
+               pr)
