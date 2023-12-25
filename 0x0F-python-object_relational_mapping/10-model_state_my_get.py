@@ -5,7 +5,7 @@ all names with an 'a' in it
 """
 
 from model_state import Base, State
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, select
 from sqlalchemy.orm import sessionmaker
 from sys import argv
 
