@@ -16,7 +16,8 @@ if __name__ == "__main__":
     Session = sessionmaker(engine)
     session = Session()
 
-    result = session.query(State).filter(State.name == '{}'.format(argv[4])).first()
+    result = session.query(State).filter(State.name == '{}'
+                                         .format(argv[4])).first()
     try:
         print(result.id)
     except AttributeError:
