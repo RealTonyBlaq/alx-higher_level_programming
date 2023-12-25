@@ -16,9 +16,8 @@ if __name__ == "__main__":
     Session = sessionmaker(engine)
     session = Session()
 
-    result = session.query(State).filter(State.name == '{}'.format(argv[4]))
-    for row in result:
-        if row.id
-        print(row.id)
-    elif :
+    result = session.query(State).filter(State.name == '{}'.format(argv[4])).first()
+    try:
+        print(result.id)
+    except AttributeError:
         print("Not found")
