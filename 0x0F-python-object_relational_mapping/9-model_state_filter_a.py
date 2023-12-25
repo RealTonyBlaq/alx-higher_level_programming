@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """
-Script queries a database using table objects to
-retrieve the first row
-
+Script queries a database using table objects to retrieve
+all names with an 'a' in it
 """
 
 from model_state import Base, State
