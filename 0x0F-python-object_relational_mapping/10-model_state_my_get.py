@@ -17,7 +17,6 @@ if __name__ == "__main__":
     session = Session()
 
     result = session.query(State).filter(State.name == '{}'.format(argv[4]))
-    print(type(result))
     if result:
         for row in result:
             print(row.id)
