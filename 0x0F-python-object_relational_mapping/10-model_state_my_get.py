@@ -20,5 +20,5 @@ if __name__ == "__main__":
     if result:
         for row in result:
             print(row.id)
-    else:
+    elif result == ():
         print("Not found")
