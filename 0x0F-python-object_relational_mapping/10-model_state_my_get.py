@@ -16,7 +16,6 @@ if __name__ == "__main__":
     Session = sessionmaker(engine)
     session = Session()
 
-    result = session.query(State).filter(State.name.like
-                                         ('%a%')).order_by(State.id)
+    result = session.query(State).where(State.name == argv[4])
     for row in result:
-        print("{}: {}".format(row.id, row.name))
+        print(result.id)
