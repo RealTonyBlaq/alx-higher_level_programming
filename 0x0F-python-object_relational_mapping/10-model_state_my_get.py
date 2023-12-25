@@ -16,7 +16,7 @@ if __name__ == "__main__":
     Session = sessionmaker(engine)
     session = Session()
 
-    result = session.query(State.id).filter(State.name == "{}".format(argv[4]))
+    result = session.query(State.id).filter(State.name.like)
     if result is not None:
         print(result)
     else:
