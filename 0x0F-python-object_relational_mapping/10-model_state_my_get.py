@@ -17,5 +17,7 @@ if __name__ == "__main__":
     session = Session()
 
     result = session.query(State).where(State.name == argv[4])
-    for row in result:
+    if result is not None:
         print(result.id)
+    else:
+        print("Not found")
