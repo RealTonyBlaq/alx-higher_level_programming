@@ -16,9 +16,10 @@ if __name__ == "__main__":
     Session = sessionmaker(engine)
     session = Session()
 
-    result = session.query(State.id).filter(State.id == '1)
+    result = session.query(State).filter(State.name == '{}'.format(argv[4]))
     print(type(result))
-    if result is not None:
-        print(result)
+    if result:
+        for row in result:
+            print(row.id)
     else:
         print("Not found")
