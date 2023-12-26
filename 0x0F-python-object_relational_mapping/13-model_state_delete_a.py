@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-Script updates the State table where id == 2 and sets the
-corresponding name column to 'New Mexico'
+Script deletes rows where the name column values have the letter 'a'
 """
 
 from model_state import Base, State
