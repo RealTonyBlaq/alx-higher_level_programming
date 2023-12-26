@@ -14,4 +14,4 @@ if __name__ == "__main__":
         statement = select(State.name, City.id, City.name).join(City, State.id == City.state_id)
         result = connection.execute(statement)
         for row in result:
-            print("{}: {} {}".FORMATrow[0])
+            print("{}: ({}) {}".format(row[0], row[1], row[2]))
