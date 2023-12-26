@@ -14,7 +14,8 @@ class City(Base):
     -----------------
 
     __tablename__ (str): name of the table
-    id (int): in
+    id (int): An auto-generated column with unique values and is a primary key
+    name (str): 
     """
     __tablename__ = 'cities'
     id = Column('id', Integer, nullable=False, primary_key=True, unique=True)
