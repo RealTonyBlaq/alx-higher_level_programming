@@ -15,9 +15,5 @@ if __name__ == "__main__":
                            .format(argv[1], argv[2], argv[3]),
                            pool_pre_ping=True)
     conn = engine.connect()
-    statement = (
-        insert(State).
-        values(name='Louisiana')
-    )
-    conn.execute(statement)
+    conn.execute(State.insert(), name='Louisiana')
     conn.close()
