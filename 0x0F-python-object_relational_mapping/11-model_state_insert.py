@@ -17,4 +17,6 @@ if __name__ == "__main__":
     row = State(name='Louisiana')
     session.add(row)
     session.commit()
+    result = session.query(State.id).filter(State.name == 'Louisiana').first()
+    print(result.id)
     session.close()
