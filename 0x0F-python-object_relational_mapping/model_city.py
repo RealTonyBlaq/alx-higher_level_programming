@@ -14,8 +14,9 @@ class City(Base):
     -----------------
 
     __tablename__ (str): name of the table
-    id (int): An auto-generated column with unique values and is a primary key
-    name (str): 
+    id (int): An auto-generated column with unique values, a primary key
+            and non-null
+    name (str): A string column of max 128 characters and cannot be null
     """
     __tablename__ = 'cities'
     id = Column('id', Integer, nullable=False, primary_key=True, unique=True)
