@@ -12,3 +12,6 @@ if __name__ == "__main__":
                         format(argv[1], argv[2], argv[3]), pool_pre_ping=True)
     with engine.connect() as connection:
         statement = select(State.name, City.id, City.name).join(City, State.id == City.state_id)
+        result = connection.execute(statement)
+        for row in result:
+            
