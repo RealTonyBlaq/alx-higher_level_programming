@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 """
-Script queries a database using table objects to retrieve
-the State.id from State.name passed as argument (argv[4])
-
-If successful, the id is printed, otherwise 'Not found'
+Script inserts a new row to the table States
 """
 
 from model_state import Base, State
@@ -19,3 +16,4 @@ if __name__ == "__main__":
     session = Session()
     row = State(name='Louisiana')
     session.add(row)
+    session.commit()
