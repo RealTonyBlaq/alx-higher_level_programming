@@ -17,3 +17,4 @@ if __name__ == "__main__":
     row = State(name='Louisiana')
     session.add(row)
     session.commit()
+    session.close()
