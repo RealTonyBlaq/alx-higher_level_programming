@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ Script uses sqlalchemy module to create a table in a database """
 
-from sqlalchemy import Table, String, MetaData, Integer, Column
+from sqlalchemy import String, Integer, Column
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
@@ -11,7 +11,7 @@ class State(Base):
     """
     Defining a class State which inherits from Base
 
-    class attributess:
+    class attributes:
     -----------------
 
     __tablename__ (str): name of the table
