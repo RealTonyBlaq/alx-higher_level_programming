@@ -11,7 +11,7 @@ class State(Base):
     """
     Defining a class State which inherits from Base
 
-    class attributess:
+    class attributes:
     -----------------
 
     __tablename__ (str): name of the table
