@@ -12,7 +12,7 @@ class State(Base):
     Defining a class State which inherits from Base
 
     class attributes:
-    -----------------
+    ------------------
 
     __tablename__ (str): name of the table
     id (int): An auto-generated column with unique values
