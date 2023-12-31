@@ -6,6 +6,7 @@ from sqlalchemy import create_engine
 from relationship_city import City
 from relationship_state import Base, State
 from sys import argv
+from sy
 
 engine = create_engine("mysql://{}:{}@localhost:3306/{}"
                        .format(argv[1], argv[2], argv[3]),
@@ -16,4 +17,4 @@ with engine.connect() as connection:
     new_state = State(name='California')
     new_city = City(name='San Francisco')
     new_state.cities.append(new_city)
-    connection.execute()
+    connection.execute(new_state)
