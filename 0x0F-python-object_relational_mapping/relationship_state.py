@@ -15,6 +15,8 @@ class State(Base):
     ------------------
     In addition to previous requirements:
     - cities have a relationship with the class cities
+    - If a state object is deleted, all linked City objects
+        will be deleted as well
 
     __tablename__ (str): name of the table
     id (int): An auto-generated column with unique values
