@@ -2,7 +2,7 @@
 
 """ Module """
 
-from sqlalchemy import create_engine, select
+from sqlalchemy import create_engine
 from relationship_city import Base, City
 from relationship_state import Base, State
 from sys import argv
