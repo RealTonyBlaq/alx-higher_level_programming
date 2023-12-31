@@ -4,4 +4,7 @@
 
 from sqlalchemy import create_engine, select
 from relationship_city import Base, City
-from rel
+from relationship_state import Base, State
+from sys import argv
+
+engine = create_engine("mysql://{}:{}")
