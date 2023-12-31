@@ -13,8 +13,12 @@ engine = create_engine("mysql://{}:{}@localhost:3306/{}"
                        pool_pre_ping=True)
 
 Session = sessionmaker(engine)
+session = Session()
 
 Base.metadata.create_all(bind=engine)
+
 new_state = State(name='California')
 new_city = City(name='San Francisco')
 new_state.cities.append(new_city)
+session.add(new_state)
+
