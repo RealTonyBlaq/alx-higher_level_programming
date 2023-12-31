@@ -13,4 +13,4 @@ engine = create_engine("mysql://{}:{}@localhost:3306/{}"
 
 with engine.connect() as connection:
     Base.metadata.create_all(bind=engine)
-    
+    new_state
