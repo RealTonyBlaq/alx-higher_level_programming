@@ -4,6 +4,7 @@
 from sqlalchemy import String, Integer, Column
 from sqlalchemy.ext.declarative import declarative_base
 from model_city import Base, City
+from sqlalchemy import rel
 
 Base = declarative_base()
 
@@ -27,4 +28,4 @@ class State(Base):
     id = Column("id", Integer, unique=True, nullable=False,
                 primary_key=True)
     name = Column("name", String(128), nullable=False)
-    
+
