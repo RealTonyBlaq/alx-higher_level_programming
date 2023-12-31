@@ -3,7 +3,7 @@
 
 from sqlalchemy import String, Integer, Column
 from sqlalchemy.ext.declarative import declarative_base
-from model_city import Base, City
+from sqlalchemy.orm import relationship
 
 Base = declarative_base()
 
