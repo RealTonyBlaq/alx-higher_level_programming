@@ -13,6 +13,8 @@ class State(Base):
 
     class attributes:
     ------------------
+    In addition to previous requirements:
+    - cities have a relationship with the class cities
 
     __tablename__ (str): name of the table
     id (int): An auto-generated column with unique values
