@@ -27,4 +27,5 @@ class State(Base):
     id = Column("id", Integer, unique=True, nullable=False,
                 primary_key=True)
     name = Column("name", String(128), nullable=False)
+    cities = 
 
