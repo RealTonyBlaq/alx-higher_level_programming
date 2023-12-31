@@ -4,7 +4,6 @@
 from sqlalchemy import String, Integer, Column
 from sqlalchemy.ext.declarative import declarative_base
 from model_city import Base, City
-from sqlalchemy import rel
 
 Base = declarative_base()
 
