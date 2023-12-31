@@ -9,4 +9,7 @@ from sys import argv
 
 engine = create_engine("mysql://{}:{}@localhost:3306/{}"
                        .format(argv[1], argv[2], argv[3]),
-                       pool_pre_ping=)
+                       pool_pre_ping=True)
+
+with engine.connect() as connection:
+    statement = 
