@@ -3,7 +3,7 @@
 """ Module """
 
 from sqlalchemy import create_engine
-from relationship_city import Base, City
+from relationship_city import City
 from relationship_state import Base, State
 from sys import argv
 
@@ -12,4 +12,5 @@ engine = create_engine("mysql://{}:{}@localhost:3306/{}"
                        pool_pre_ping=True)
 
 with engine.connect() as connection:
-    statement = 
+    Base.metadata.create_all(bind=engine)
+    
