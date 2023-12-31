@@ -13,4 +13,5 @@ engine = create_engine("mysql://{}:{}@localhost:3306/{}"
 
 with engine.connect() as connection:
     Base.metadata.create_all(bind=engine)
-    new_state
+    new_state = State(name='California')
+    new_city = City(name='San-francisco')
