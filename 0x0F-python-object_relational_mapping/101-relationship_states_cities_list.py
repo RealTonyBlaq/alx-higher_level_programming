@@ -18,7 +18,7 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
 
     with engine.connect() as connection:
-        s_statement = select(State.id, State.name).order_by(State.id)
+        s_statement = select(State.id, State.name, City.id).order_by(State.id, City.id)
         s_result = connection.execute(s_statement)
         for row in s_result:
             print("{}: {}".format(row[0], row[1]))
