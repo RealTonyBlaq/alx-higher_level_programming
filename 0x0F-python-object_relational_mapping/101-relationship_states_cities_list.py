@@ -24,5 +24,7 @@ if __name__ == "__main__":
         result = connection.execute(statement)
         count = 0
         for row in result:
-            print("{}: {}".format())
+            first = row[0]
+            print("{}: {}".format(row[0], row[1]))
+
             
