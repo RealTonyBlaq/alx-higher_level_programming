@@ -25,4 +25,4 @@ if __name__ == "__main__":
         for row in s_result:
             print("{}: {}".format(row[0], row[1]))
             for _row in c_result:
-                print("\t{}")
+                print("\t{}: {}")
