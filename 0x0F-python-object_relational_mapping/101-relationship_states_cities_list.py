@@ -6,7 +6,7 @@ Script queries a database
 This script will not be executed when imported
 """
 
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, select
 from relationship_city import City
 from relationship_state import Base, State
 from sys import argv
@@ -17,4 +17,5 @@ if __name__ == "__main__":
                            .format(argv[1], argv[2], argv[3]),
                            pool_pre_ping=True)
 
-    with engine.connect()
+    with engine.connect() as connection:
+        stat
