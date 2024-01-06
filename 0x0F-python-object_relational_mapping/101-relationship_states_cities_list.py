@@ -19,3 +19,4 @@ if __name__ == "__main__":
 
     with engine.connect() as connection:
         statement = select(State.id, State.name)
+        
