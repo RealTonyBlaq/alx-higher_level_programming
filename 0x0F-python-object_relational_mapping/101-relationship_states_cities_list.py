@@ -6,7 +6,8 @@ Script queries a database
 This script will not be executed when imported
 """
 
-from sqlalchemy import create_engine, select
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 from relationship_city import City
 from relationship_state import Base, State
 from sys import argv
@@ -17,19 +18,12 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     Base.metadata.create_all(engine)
 
-    with engine.connect() as connection:
-        statement = select(State.id, State.name, City.id, City.name)\
-            .join(State, State.id == City.state_id)\
-            .order_by(State.id, City.id)
-        result = connection.execute(statement)
-        flag = 0
-        for row in result:
-            if flag != 0:
-                if copy != row[0]:
-                    print("{}: {}".format(row[0], row[1]))
-            else:
-                print("{}: {}".format(row[0], row[1]))
-                flag = 1
-            if row[2] and row[3]:
-                print("    {}: {}".format(row[2], row[3]))
-            copy = row[0]
+    Session = sessionmaker(bind=engine)
+    session = Session()
+
+    result = session.query(State).outerjoin(City).order_by(State.id, City.id).all()
+
+    for state in result:
+        print("{}: {}".format(state.id, state.name))
+        for city in state.cities:
+            print("    {}: {}".format(city.id, city.name))
