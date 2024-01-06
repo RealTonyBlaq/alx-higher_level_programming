@@ -26,5 +26,3 @@ if __name__ == "__main__":
         for row in result:
             first = row[0]
             print("{}: {}".format(row[0], row[1]))
-            flag = 1
-            if 
