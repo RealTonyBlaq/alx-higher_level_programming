@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-Script queries a database
-This script will not be executed when imported
-"""
+""" Script queries a database """
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
