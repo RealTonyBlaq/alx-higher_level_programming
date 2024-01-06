@@ -25,11 +25,9 @@ if __name__ == "__main__":
         flag = 0
         print("{}: {}".format(result[0][0], result[0][1]))
         for row in result:
-            if flag == 0:
-                print("{}: {}".format(row[0], row[1]))
-                print("\t{}: {}".format(row[2], row[3]))
-                copy = row[0]
-                flag = 1
+            print("\t{}: {}".format(row[2], row[3]))
+            copy = row[0]
+            flag = 1
             elif copy == row[0]:
                 print("\t{}: {}".format(row[2], row[3]))
 
