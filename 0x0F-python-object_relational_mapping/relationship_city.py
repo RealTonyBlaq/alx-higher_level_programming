@@ -2,8 +2,10 @@
 
 """ Module """
 
-from model_state import Base
+from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, String, Integer, ForeignKey
+from sqlalchemy.orm import relationship
+from relationship_state import Base
 
 
 class City(Base):
@@ -25,3 +27,4 @@ class City(Base):
     name = Column('name', String(128), nullable=False)
     state_id = Column('state_id', Integer, ForeignKey('states.id'),
                       nullable=False)
+    state = relationship("State", back_populates="cities")
