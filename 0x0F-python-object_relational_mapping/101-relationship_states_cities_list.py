@@ -20,7 +20,6 @@ if __name__ == "__main__":
     with engine.connect() as connection:
         statement = select(State.id, State.name, City.id, City.name)\
             .join(State, State.id == City.state_id)\
-            .group_by(State.id)\
             .order_by(State.id, City.id)
         result = connection.execute(statement)
         for row in result:
