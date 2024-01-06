@@ -2,10 +2,10 @@
 """ Script uses sqlalchemy module to create a table in a database """
 
 from sqlalchemy import String, Integer, Column
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
-from model_state import Base
-from relationship_city import Base, City
+from sqlalchemy.ext.declarative import declarative_base
+
+Base = declarative_base()
 
 
 class State(Base):
@@ -27,4 +27,4 @@ class State(Base):
     id = Column("id", Integer, unique=True, nullable=False,
                 primary_key=True)
     name = Column("name", String(128), nullable=False)
-    cities = relationship(City, backref="State", cascade="all, delete")
+    cities = relationship("City", back_populates="state", cascade="all, delete")
