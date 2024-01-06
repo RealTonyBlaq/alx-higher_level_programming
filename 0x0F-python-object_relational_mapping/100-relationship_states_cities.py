@@ -3,8 +3,9 @@
 """ Module """
 
 from sqlalchemy import create_engine
+from sqlalchemy
 from relationship_city import City
-from relationship_state import Base, State
+from relationship_state import State
 from sys import argv
 from sqlalchemy.orm import sessionmaker
 
