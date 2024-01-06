@@ -24,4 +24,5 @@ if __name__ == "__main__":
         result = connection.execute(statement)
         for row in result:
             print("{}: {}".format(row[0], row[1]))
+            
             print("\t{}: {}".format(row[2], row[3]))
