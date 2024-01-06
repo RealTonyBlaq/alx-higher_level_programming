@@ -20,8 +20,8 @@ if __name__ == "__main__":
     with engine.connect() as connection:
         s_statement = select(State.id, State.name).order_by(State.id)
         s_result = connection.execute(s_statement)
-        c_result = connection.execute(c_statement)
         for row in s_result:
             print("{}: {}".format(row[0], row[1]))
+            c_statement = select(City.id, City.name).join(State, State.id == City.state_id).where(Sta).order_by(City.id)
             for _row in c_result:
                 print("\t{}: {}".format(_row[0], _row[1]))
