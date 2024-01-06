@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 Script queries a database
 
