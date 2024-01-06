@@ -18,7 +18,8 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
 
     with engine.connect() as connection:
-        statement = select(State.id, State.name)
-        statement2 = select(City.id, City.name).join(State, State.id == City.state_id)
-        state_resultconnection.execute(statement)
+        s_statement = select(State.id, State.name)
+        c_statement = select(City.id, City.name).join(State, State.id == City.state_id)
+        s_result = connection.execute(statement)
+        c_result = connection.execute(c_statement)
 
