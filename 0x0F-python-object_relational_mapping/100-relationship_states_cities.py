@@ -2,9 +2,8 @@
 
 """ Module """
 
-from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
-from relationship_city import City
+from sqlalchemy import create_engine, MetaData
+from relationship_city import Base, City
 from relationship_state import State
 from sys import argv
 from sqlalchemy.orm import sessionmaker
@@ -15,9 +14,9 @@ engine = create_engine("mysql://{}:{}@localhost:3306/{}"
 
 Session = sessionmaker(engine)
 session = Session()
-Base = declarative_base()
+metadata = MetaData()
 
-Base.metadata.create_all(bind=engine)
+metadata.create_all(bind=engine)
 
 new_state = State(name='California')
 new_city = City(name='San Francisco')
