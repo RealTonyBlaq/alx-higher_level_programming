@@ -24,4 +24,5 @@ if __name__ == "__main__":
         c_result = connection.execute(c_statement)
         for row in s_result:
             print("{}: {}".format(row[0], row[1]))
-            for rows
+            for _row in c_result:
+                print("\t{}")
