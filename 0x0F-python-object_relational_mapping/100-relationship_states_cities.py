@@ -3,7 +3,7 @@
 """ Module """
 
 from sqlalchemy import create_engine
-from sqlalchemy
+from sqlalchemy.ext.declarative import declarative_base
 from relationship_city import City
 from relationship_state import State
 from sys import argv
@@ -15,6 +15,7 @@ engine = create_engine("mysql://{}:{}@localhost:3306/{}"
 
 Session = sessionmaker(engine)
 session = Session()
+Base = declarative_base()
 
 Base.metadata.create_all(bind=engine)
 
