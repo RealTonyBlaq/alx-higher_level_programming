@@ -23,6 +23,7 @@ if __name__ == "__main__":
             .order_by(State.id, City.id)
         result = connection.execute(statement)
         flag = 0
+        print("{}")
         for row in result:
             if flag == 0:
                 print("{}: {}".format(row[0], row[1]))
