@@ -30,5 +30,5 @@ if __name__ == "__main__":
             else:
                 print("{}: {}".format(row[0], row[1]))
                 flag = 1
-            print("\t{}: {}".format(row[2], row[3]))
+            print("    {}: {}".format(row[2], row[3]))
             copy = row[0]
