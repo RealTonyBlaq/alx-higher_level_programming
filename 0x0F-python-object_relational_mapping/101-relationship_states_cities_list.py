@@ -26,5 +26,8 @@ if __name__ == "__main__":
         count = 0
         print("{}: {}".format(result[0][0], result[0][1]))
         for row in result:
+            if count > 0:
+                print("{}: {}".format(result[0][0], result[0][1]))
             print("\t{}: {}".format(row[2], row[3]))
             copy = row[0]
+            count += 1
