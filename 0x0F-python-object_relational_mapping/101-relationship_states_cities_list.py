@@ -28,6 +28,3 @@ if __name__ == "__main__":
         for row in result:
             print("\t{}: {}".format(row[2], row[3]))
             copy = row[0]
-            elif copy == row[0]:
-                print("\t{}: {}".format(row[2], row[3]))
-
