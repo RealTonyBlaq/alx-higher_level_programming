@@ -18,4 +18,4 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
 
     with engine.connect() as connection:
-        stat
+        statement = select(State.id, State.name)
