@@ -22,4 +22,8 @@ if __name__ == "__main__":
             .join(State, State.id == City.state_id)\
             .order_by(State.id, City.id)
         result = connection.execute(statement)
-        print(len(result))
+        for row in result:
+            print("{}: {}".format(row[0], row[1]))
+            flag = 1
+            while row[0] and 
+            print("\t{}: {}".format(row[2], row[3]))
