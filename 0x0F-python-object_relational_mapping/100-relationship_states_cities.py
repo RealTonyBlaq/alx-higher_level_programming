@@ -2,7 +2,7 @@
 
 """ Module """
 
-from sqlalchemy import create_engine, MetaData
+from sqlalchemy import create_engine
 from relationship_city import City
 from relationship_state import Base, State
 from sys import argv
@@ -14,13 +14,12 @@ engine = create_engine("mysql://{}:{}@localhost:3306/{}"
 
 Session = sessionmaker(engine)
 session = Session()
-metadata = MetaData()
-
-metadata.create_all(bind=engine)
+Base.metadata.create_all(engine)
 
 new_state = State(name='California')
 new_city = City(name='San Francisco')
 new_state.cities.append(new_city)
+
 session.add(new_state)
 session.commit()
 session.close()
