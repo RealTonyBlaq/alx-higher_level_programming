@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-""" Module """
+""" Script creates  """
 
 from sqlalchemy import create_engine
 from relationship_city import City
