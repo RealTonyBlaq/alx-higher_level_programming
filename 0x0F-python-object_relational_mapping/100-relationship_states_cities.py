@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-""" Script creates  """
+""" Script creates a new state with a new city which have a relationship """
 
 from sqlalchemy import create_engine
 from relationship_city import City
