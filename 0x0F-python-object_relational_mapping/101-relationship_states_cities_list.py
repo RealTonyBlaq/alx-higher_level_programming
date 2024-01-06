@@ -20,14 +20,9 @@ if __name__ == "__main__":
     with engine.connect() as connection:
         statement = select(State.id, State.name, City.id, City.name)\
             .join(State, State.id == City.state_id)\
-            .group_by(State.id, City.id)
+            .group_by(State.id)\
             .order_by(State.id, City.id)
         result = connection.execute(statement)
         for row in result:
             print("{}: {}".format(row[0], row[1]))
-            c_statement = select(City.id, City.name)\
-                .join(State, State.id == City.state_id)\
-                .where(State.id == row[0]).order_by(City.id)
-            c_result = connection.execute(c_statement)
-            for _row in c_result:
-                print("\t{}: {}".format(_row[0], _row[1]))
+            print("\t{}")
