@@ -23,4 +23,5 @@ if __name__ == "__main__":
         s_result = connection.execute(s_statement)
         c_result = connection.execute(c_statement)
         for row in s_result:
-            print()
+            print("{}: {}".format(row[0], row[1]))
+            for rows
