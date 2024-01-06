@@ -26,5 +26,6 @@ if __name__ == "__main__":
         for row in result:
             if flag == 0:
                 print("{}: {}".format(row[0], row[1]))
-                
+                copy = row[0]
+            if 
 
