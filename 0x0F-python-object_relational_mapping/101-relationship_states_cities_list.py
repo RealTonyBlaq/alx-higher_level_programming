@@ -29,5 +29,5 @@ if __name__ == "__main__":
                 print("\t{}: {}".format(row[2], row[3]))
                 copy = row[0]
                 flag = 1
-            else
+            elif flag == 1 and 
 
