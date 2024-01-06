@@ -23,11 +23,11 @@ if __name__ == "__main__":
             .order_by(State.id, City.id)
         result = connection.execute(statement)
         flag = 0
+        count = 0
         print("{}: {}".format(result[0][0], result[0][1]))
         for row in result:
             print("\t{}: {}".format(row[2], row[3]))
             copy = row[0]
-            flag = 1
             elif copy == row[0]:
                 print("\t{}: {}".format(row[2], row[3]))
 
