@@ -24,7 +24,7 @@ if __name__ == "__main__":
             print("{}: {}".format(row[0], row[1]))
             c_statement = select(City.id, City.name)\
                 .join(State, State.id == City.state_id)\
-                    .where(State.id == row[0]).order_by(City.id)
+                .where(State.id == row[0]).order_by(City.id)
             c_result = connection.execute(c_statement)
             for _row in c_result:
                 print("\t{}: {}".format(_row[0], _row[1]))
