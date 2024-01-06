@@ -18,9 +18,9 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
 
     with engine.connect() as connection:
-        s_statement = select(State.id, State.name)
-        c_statement = select(City.id, City.name).join(State, State.id == City.state_id)
+        s_statement = select(State.id, State.name).order_by(State.id)
+        c_statement = select(City.id, City.name).join(State, State.id == City.state_id).order_by(City.id)
         s_result = connection.execute(s_statement)
         c_result = connection.execute(c_statement)
         for row in s_result:
-            
+            print()
