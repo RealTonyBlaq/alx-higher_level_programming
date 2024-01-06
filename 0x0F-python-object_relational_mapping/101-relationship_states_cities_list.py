@@ -19,4 +19,5 @@ if __name__ == "__main__":
 
     with engine.connect() as connection:
         statement = select(State.id, State.name)
-        statement2 = select(City.id, City.name).join(State, State.id == )
+        statement2 = select(City.id, City.name).join(State, State.id == City.state_id)
+        
