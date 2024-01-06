@@ -4,8 +4,8 @@
 from sqlalchemy import String, Integer, Column
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
-
-Base = declarative_base()
+from model_state import Base
+from relationship_city import Base, City
 
 
 class State(Base):
@@ -19,12 +19,12 @@ class State(Base):
     - If a state object is deleted, all linked City objects
         will be deleted as well
 
-    __tablename__ (str): name of the table
-    id (int): An auto-generated column with unique values
-    name (string): A column with string values which cannot be null
+    __tablename__ (str): name of the table.
+    id (int): An auto-generated column with unique values.
+    name (string): A column with string values which cannot be null.
     """
     __tablename__ = "states"
     id = Column("id", Integer, unique=True, nullable=False,
                 primary_key=True)
     name = Column("name", String(128), nullable=False)
-    cities = relationship("City", backref="State", cascade="all, delete")
+    cities = relationship(City, backref="State", cascade="all, delete")
