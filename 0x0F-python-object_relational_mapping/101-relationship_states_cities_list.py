@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
 Script queries a database
-
 This script will not be executed when imported
 """
 
