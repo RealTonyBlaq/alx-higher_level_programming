@@ -1,8 +1,17 @@
 #!/usr/bin/node
+/* Script finds the maximum number in the list of arguments */
 
-/* Script searches for the second largest number in the list of arguments */
-
-const argLength = process.argv.length - 2;
-if (argLength <= 1) {
+const argList = [];
+if (process.argv.length - 2 >= 2) {
+  let i = 2;
+  while (process.argv[i]) {
+    argList.push(Number(process.argv[i]));
+    i++;
+  }
+  const maxNumber = Math.max(...argList);
+  const args = argList.filter(argList => argList !== maxNumber);
+  const secondMax = Math.max(...args);
+  console.log(secondMax);
+} else {
   console.log(0);
 }
