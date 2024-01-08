@@ -2,4 +2,8 @@
 
 /* Script adds to numbers passed to it */
 
-funct
+function add (a, b) {
+  return (a + b);
+}
+
+const a = Number(process.argv[2])
