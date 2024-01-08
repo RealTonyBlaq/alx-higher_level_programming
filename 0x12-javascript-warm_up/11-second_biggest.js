@@ -2,4 +2,7 @@
 
 /* Script searches for the second largest number in the list of arguments */
 
-const argLength = processargv.length
+const argLength = process.argv.length - 2;
+if (argLength <= 1) {
+  console.log(0);
+}
