@@ -4,4 +4,4 @@
 
 class Rectangle {
   pass
-};
+}
