@@ -3,5 +3,5 @@
 /* Script creates an empty class that defines a rectangle */
 
 class Rectangle {
-  pass
 }
+module.exports = Rectangle;
