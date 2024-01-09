@@ -6,7 +6,7 @@ class Rectangle {
   w;
   h;
 
-  constructor(w, h) {
+  constructor (w, h) {
     this.weight = w;
     this.height = h;
   }
