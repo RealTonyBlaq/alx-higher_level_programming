@@ -3,11 +3,9 @@
 /* Script creates a class that defines a rectangle */
 
 class Rectangle {
-  w;
-  h;
 
   constructor (w, h) {
-    this.weight = w;
+    this.width = w;
     this.height = h;
   }
 }
