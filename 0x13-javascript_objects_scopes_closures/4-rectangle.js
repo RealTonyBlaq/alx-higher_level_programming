@@ -26,9 +26,7 @@ class Rectangle {
   rotate () {
     /* method exchanges the values of width and height */
     if (this.height && this.width) {
-      const temp = this.width;
-      this.width = this.height;
-      this.height = temp;
+      [this.height, this.width] = [this.width, this.height];
     }
   }
 
