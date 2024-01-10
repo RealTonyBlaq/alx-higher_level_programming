@@ -14,8 +14,9 @@ class Rectangle {
       this.height = h;
     }
   }
+
   print () {
-    if (this.width >=1 && this.height >= 1) {
+    if (this.width >= 1 && this.height >= 1) {
       for (let i = 0; i < this.height; i++) {
         console.log('X'.repeat(this.width));
       }
