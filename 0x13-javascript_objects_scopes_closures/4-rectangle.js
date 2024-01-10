@@ -32,8 +32,10 @@ class Rectangle {
 
   double () {
     /* method doubles the value of the attributes */
-    this.height *= 2;
-    this.width *= 2;
+    if (this.height >= 1 && this.width >= 1) {
+      this.height *= 2;
+      this.width *= 2;
+    }
   }
 }
 
