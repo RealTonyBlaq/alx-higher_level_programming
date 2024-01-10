@@ -9,9 +9,6 @@ class Rectangle {
   if w or h is <= 0, an empty class is created.
   */
   constructor (w, h) {
-    if (isNaN(w) || isNaN(h)) {
-      return this;
-    }
     if (w > 0 && h > 0) {
       this.width = w;
       this.height = h;
