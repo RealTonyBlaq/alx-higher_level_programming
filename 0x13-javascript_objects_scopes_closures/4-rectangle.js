@@ -25,14 +25,16 @@ class Rectangle {
 
   rotate () {
     /* method exchanges the values of width and height */
-    const temp = this.width;
-    this.width = this.height;
-    this.height = temp;
+    if (this.height && this.width) {
+      const temp = this.width;
+      this.width = this.height;
+      this.height = temp;
+    }
   }
 
   double () {
     /* method doubles the value of the attributes */
-    if (this.height >= 1 && this.width >= 1) {
+    if (this.height && this.width) {
       this.height *= 2;
       this.width *= 2;
     }
