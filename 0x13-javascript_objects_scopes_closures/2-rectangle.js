@@ -9,7 +9,7 @@ class Rectangle {
   if w or h is <= 0, an empty class is created.
   */
   constructor (w, h) {
-    if (w > 1 && h > 1) {
+    if (w > 0 && h > 0) {
       this.width = w;
       this.height = h;
     }
