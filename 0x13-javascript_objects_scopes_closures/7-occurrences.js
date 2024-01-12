@@ -6,11 +6,6 @@ exports.nbOccurences = function (list, searchElement) {
   if (!list || list.length === 0 || !searchElement) {
     return 0;
   }
-  let count = 0;
-  for (let i = 0; i < list.length; i++) {
-    if (list[i] === searchElement) {
-      count++;
-    }
-  }
-  return count;
+  const listFilter = list.filter(list => list === searchElement);
+  return listFilter.length;
 };
