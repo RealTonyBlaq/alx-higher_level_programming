@@ -18,4 +18,6 @@ if __name__ == "__main__":
     Session = sessionmaker(engine)
     session = Session()
 
-    result = session.query(City).
+    result = session.query(City)
+    for row in result:
+        print("{}: {} -> {}".format)
