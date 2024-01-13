@@ -18,4 +18,4 @@ if __name__ == "__main__":
     Session = sessionmaker(engine)
     session = Session()
 
-    result = session.query()
+    result = session.query(City).
