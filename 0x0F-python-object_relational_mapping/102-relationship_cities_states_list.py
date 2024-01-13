@@ -8,7 +8,7 @@ the relationship between City and State
 from relationship_city import City
 from relationship_state import Base, State
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker()
+from sqlalchemy.orm import sessionmaker
 from sys import argv
 
 if __name__ == "__main__":
@@ -18,4 +18,4 @@ if __name__ == "__main__":
     Session = sessionmaker(engine)
     session = Session()
 
-    
+    result = session.query()
