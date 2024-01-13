@@ -20,4 +20,5 @@ if __name__ == "__main__":
 
     result = session.query(City)
     for row in result:
-        print("{}: {} -> {}".format)
+        print("{}: {} -> {}".format(row.id, row.name, row.state.name))
+    session.close()
