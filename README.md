@@ -13,4 +13,4 @@ Directory | Description
 `0x06-python-classes` | Intro to Classes and objects in Python - how to use the `__init__`, `self`, class attributes, public attributes, methods, getters and setters.
 `0x07-python-test_driven_development` | Script testing using unittests.
 `0x08-python-more_classes` | More manipulation of Classes in Python. Usage of `__repr__` and `__str__`, and `__del__` class methods
-`0x09-`
+`0x09-everything_is_object` | Contains answers to 
