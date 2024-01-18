@@ -4,4 +4,4 @@ This repository contains all my tasks and projects written in higher level langu
 
 Directory | Description
 --- | ---
-`0x00-python`
+`0x00-python-hello_world` | Contains 
