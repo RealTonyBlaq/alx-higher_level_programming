@@ -14,4 +14,4 @@ Directory | Description
 `0x07-python-test_driven_development` | Script testing using unittests.
 `0x08-python-more_classes` | More manipulation of Classes in Python. Usage of `__repr__` and `__str__`, and `__del__` class methods
 `0x09-everything_is_object` | Contains answers to quiz about Objects in Python
-`0x0A-python_inheritance` | 
+`0x0A-python_inheritance` | Shows how a child class inherits methods and 
