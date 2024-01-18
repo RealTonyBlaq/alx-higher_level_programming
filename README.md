@@ -21,4 +21,4 @@ Directory | Description
 `0x0E-SQL_more_queries` | More SQL queries - Grant permissions in SQL and other fun stuff
 `0x0F-python_object_relational_mapping` | Object-Oriented Programming in Python - Using `MySQLdb` and `SQLAlchemy` modules to connect to and query a database and format output.
 `0x12-javascript-warm_up` | Scripting with JS - Functions, if/else statements, datatypes, understanding basic JS syntax
-`0x13-javascript_objects_scopes_closures` | How to create classes (`this` keyword), objects with JS, `export` statement
+`0x13-javascript_objects_scopes_closures` | How to create classes (`this` keyword), objects with JS, `export` statement.
