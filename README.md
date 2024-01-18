@@ -18,5 +18,6 @@ Directory | Description
 `0x0B-python-input_output` | Shows how to read, write or append strings to files, JSON serialization and deserialization
 `0x0C-python_almost_a_circle` | Contains implementation of Classes, inheritance, file I/O as well JSON serialization and deserialization
 `0x0D-SQL_introduction` | How to create databases, users, tables and query them, understanding basic SQL syntax.
-`0x0E-SQL_more_queries` | More SQL queries - 
+`0x0E-SQL_more_queries` | More SQL queries - Grant permissions in SQL and other fun stuff
+``
 
