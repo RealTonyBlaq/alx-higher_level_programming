@@ -11,4 +11,5 @@ Directory | Description
 `0x04-python-more_data_structures` | More manipulation of data structures
 `0x05-python-exceptions` | Shows usage of `raise`, `try/except and finally` to create exceptions in Python given certain conditions.
 `0x06-python-classes` | Intro to Classes and objects in Python - how to use the `__init__`, `self`, class attributes, public attributes, methods, getters and setters.
-`0x07-python-test_driven_development` | Script testing using unittests
+`0x07-python-test_driven_development` | Script testing using unittests.
+`0x08-python-more_classes` | More manipulation of Classes in Python. Usage of `__repr__`
