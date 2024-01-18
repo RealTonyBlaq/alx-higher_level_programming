@@ -19,5 +19,6 @@ Directory | Description
 `0x0C-python_almost_a_circle` | Contains implementation of Classes, inheritance, file I/O as well JSON serialization and deserialization
 `0x0D-SQL_introduction` | How to create databases, users, tables and query them, understanding basic SQL syntax.
 `0x0E-SQL_more_queries` | More SQL queries - Grant permissions in SQL and other fun stuff
-`0x0F-python_object_relational_mapping` | Object-Oriented Programming in Python - Using MySQLdb and SQLAlchemy modules to query a database and format output
+`0x0F-python_object_relational_mapping` | Object-Oriented Programming in Python - Using MySQLdb and SQLAlchemy modules to connect to and query a database and format output.
+`0x12-javascript-warm_up`
 
