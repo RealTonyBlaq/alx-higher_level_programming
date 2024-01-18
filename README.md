@@ -9,4 +9,4 @@ Directory | Description
 `0x02-python-import_modules` | Shows usage of `import` to import functions from other python packages, modules, etc.
 `0x03-python-data_structures` | Shows usage and manipulation of data structures like `list`, `dict`, `tuple`
 `0x04-python-more_data_structures` | More manipulation of data structures
-`0x05`
+`0x05-python-exceptions` | Shows usage of `raise`, `try/except and finally`
