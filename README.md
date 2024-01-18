@@ -6,4 +6,4 @@ Directory | Description
 --- | ---
 `0x00-python-hello_world` | Contains scripts that do basic things in Python
 `0x01-python-if_else_loops_functions` | Contains scripts that show usage of if-else statements, loops(for, while, until)
-`0x02-python-import_modules` | Shows usage of 
+`0x02-python-import_modules` | Shows usage of `import` to import functions from other python files
