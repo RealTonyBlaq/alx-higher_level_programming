@@ -10,4 +10,4 @@ Directory | Description
 `0x03-python-data_structures` | Shows usage and manipulation of data structures like `list`, `dict`, `tuple`
 `0x04-python-more_data_structures` | More manipulation of data structures
 `0x05-python-exceptions` | Shows usage of `raise`, `try/except and finally` to create exceptions in Python given certain conditions.
-`0x06-python-classes` | 
+`0x06-python-classes` | Intro to Classes and objects in Python - how to use the `__init__`
