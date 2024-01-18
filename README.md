@@ -15,4 +15,5 @@ Directory | Description
 `0x08-python-more_classes` | More manipulation of Classes in Python. Usage of `__repr__` and `__str__`, and `__del__` class methods
 `0x09-everything_is_object` | Contains answers to quiz about Objects in Python
 `0x0A-python_inheritance` | Shows how a child class inherits methods and attributes from a parent class.
-`0x0B-python-input_output` | 
+`0x0B-python-input_output` | Shows how to read, write or append strings to files, JSON serialization and deserialization
+`0x0C-python`
