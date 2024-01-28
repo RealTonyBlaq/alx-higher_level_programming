@@ -1,7 +1,18 @@
-#!/usr/bin/env bash
-# Script takes in a URL, sends a request to that URL,
-#+ and displays the size of the body of the response
+#!/bin/bash
 
-if [ "$#" -eq 1 ]; then
-    curl -i -X GET "$1" | grep "Content-Length: " | cut -d ' ' -f2
+# Check if a URL is provided as an argument
+if [ -z "$1" ]; then
+    echo "Usage: $0 <URL>"
+    exit 1
+fi
+
+url="$1"
+
+# Send a request using curl and display the size of the response body
+body_size=$(curl -sI "$url" | grep -i '^Content-Length:' | awk '{print $2}' | tr -d '\r')
+
+if [ -z "$body_size" ]; then
+    echo "Unable to determine the size of the response body."
+else
+    echo "Size of the response body: ${body_size} bytes"
 fi
