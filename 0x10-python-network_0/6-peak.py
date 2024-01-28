@@ -4,5 +4,5 @@
 def find_peak(list_of_integers):
     if list_of_integers == [] or list_of_integers is None:
         return None
-    peak = list_of_integers.sort()
-    return peak[-1]
+    peak = list_of_integers.sort().reverse()
+    return peak[0]
