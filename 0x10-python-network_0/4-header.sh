@@ -1,3 +1,3 @@
 #!/bin/bash
-# Script takes in a URL and displays all HTTP methods the server will accept.
-curl -s -I "${1}" | grep "^Allow: .*" | cut -d " " -f 2-
+# Script takes in a URL as an argument, sends a GET request to the URL, and displays the body of the response
+curl 
