@@ -7,4 +7,6 @@ def find_peak(list_of_integers):
       or not isinstance(list_of_integers, list):
         return None
 
-    
+    low = 0
+    high = len(list_of_integers) - 1
+    while (low)
