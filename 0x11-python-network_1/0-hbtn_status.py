@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ Script that fetches a url """
-
+if __name__ == "__main__":
 from urllib.request import urlopen
 
 url = "https://alx-intranet.hbtn.io/status"
