@@ -6,4 +6,5 @@ from urllib.request import urlopen
 url = "https://alx-intranet.hbtn.io/status"
 with urlopen(url) as response:
     html = response.read()
-    print(html)
+    print("Body response:")
+    
