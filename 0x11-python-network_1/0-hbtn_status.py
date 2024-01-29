@@ -2,7 +2,7 @@
 """ Script that fetches a url """
 
 if __name__ == "__main__":
-    from urllib.request import urlopen
+    from urllib.request import urlopen, Request
 
     url = "https://alx-intranet.hbtn.io/status"
     with urlopen(url) as response:
