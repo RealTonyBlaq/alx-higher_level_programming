@@ -7,4 +7,4 @@ url = "https://alx-intranet.hbtn.io/status"
 with urlopen(url) as response:
     c = response.read()
     print("Body response:")
-    print(f'\t- type: {type(c)}\n\t- content: {c}\n\t- utf8 content: {c[1:-1]}')
+    print(f'\t- type: {type(c)}\n\t- content: {c}\n\t- utf8 content: {c}')
