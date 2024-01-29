@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ Script that fetches a url """
-from urllib.request import urlopen, Request
+import urllib
 
 
 if __name__ == "__main__":
