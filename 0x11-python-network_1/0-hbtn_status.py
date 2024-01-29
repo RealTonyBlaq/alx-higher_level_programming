@@ -5,8 +5,8 @@ import urllib
 
 if __name__ == "__main__":
     url = "https://alx-intranet.hbtn.io/status"
-    req = Request(url)
-    with urlopen(req) as response:
+    req = urllib.request.Request(url)
+    with urllib.request.urlopen(req) as response:
         c = response.read()
         print("Body response:")
         print('    - type: {}\n    - content: {}\n    - utf8 content: {}'
