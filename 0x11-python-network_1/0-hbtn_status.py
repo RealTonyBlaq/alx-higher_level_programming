@@ -4,4 +4,5 @@
 from urllib.request import urlopen
 
 url = "https://alx-intranet.hbtn.io/status"
-with u
+with urlopen(url) as response:
+    html = response
