@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """ Script that fetches a url """
+from urllib.request import urlopen, Request
+
 
 if __name__ == "__main__":
-    from urllib.request import urlopen, Request
-
     url = "https://alx-intranet.hbtn.io/status"
     req = Request(url)
     with urlopen(req) as response:
