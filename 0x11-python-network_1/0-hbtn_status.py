@@ -5,7 +5,8 @@ if __name__ == "__main__":
     from urllib.request import urlopen, Request
 
     url = "https://alx-intranet.hbtn.io/status"
-    with urlopen(url) as response:
+    req = Request(url)
+    with urlopen(req) as response:
         c = response.read()
         print("Body response:")
         print('    - type: {}\n    - content: {}\n    - utf8 content: {}'
