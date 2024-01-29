@@ -8,4 +8,5 @@ if __name__ == "__main__":
     with urlopen(url) as response:
         c = response.read()
         print("Body response:")
-        print('    - type: {}\n    - content: {c}\n    - utf8 content: {c.decode("ascii")}')
+        print('    - type: {}\n    - content: {}\n    - utf8 content: {}'
+              .format(type(c), c, c.decode("ascii")))
