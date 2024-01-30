@@ -13,8 +13,8 @@ from sys import argv
 if __name__ == "__main__":
     value = {"email": argv[2]}
     value = urllib.parse.urlencode(value)
-    v = value.encode('ascii')
-    req = Request(url=argv[1], data=v)
+    value = value.encode('ascii')
+    req = Request(url=argv[1], data=value)
     with urlopen(req) as response:
         data = response.headers
         print("Your email is: {}".format(data.decode('utf-8')))
