@@ -15,6 +15,7 @@ if __name__ == "__main__":
     value = {"email": argv[2]}
     value = urllib.parse.urlencode(value)
     value = value.encode('ascii')
-    with urlopen(argv[1], value) as response:
-        header = response.read()
+    req = Request(url=argv[1], data=value)
+    with urlopen(req) as response:
+        header = response.headers
         print("Your email is: {}".format(header["email"]))
