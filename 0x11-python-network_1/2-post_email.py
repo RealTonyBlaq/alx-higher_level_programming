@@ -10,4 +10,4 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    req = Request(url=argv[1])
+    req = Request.po(url=argv[1])
