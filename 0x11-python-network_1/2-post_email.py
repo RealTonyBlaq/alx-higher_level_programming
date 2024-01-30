@@ -12,11 +12,10 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    if argv[1] and argv[2]:
-        value = {"email": argv[2]}
-        value = urllib.parse.urlencode(value)
-        value = value.encode('ascii')
-        req = Request(url=argv[1], data=value)
-        with urlopen(req) as response:
-            header = response.headers
-            print("Your email is: {}".format(header["email"]))
+    value = {"email": argv[2]}
+    value = urllib.parse.urlencode(value)
+    value = value.encode('ascii')
+    req = Request(url=argv[1], data=value)
+    with urlopen(req) as response:
+        header = response.headers
+        print("Your email is: {}".format(header["email"]))
