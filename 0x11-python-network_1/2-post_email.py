@@ -11,4 +11,6 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    req = Request(url=argv[1])
+    data = {"email": argv[2]}
+    data = urllib.parse.urlencode()
+    req = Request()
