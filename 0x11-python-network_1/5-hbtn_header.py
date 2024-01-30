@@ -9,6 +9,6 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    r = requests.get(argv[1])
-    if r.headers["X-Request-Id"]:
+    if argv[1]:
+        r = requests.get(argv[1])
         print(r.headers["X-Request-Id"])
