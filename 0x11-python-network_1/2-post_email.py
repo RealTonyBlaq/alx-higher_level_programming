@@ -17,5 +17,5 @@ if __name__ == "__main__":
     value = value.encode('ascii')
     req = Request(url=argv[1], data=value)
     with urlopen(req) as response:
-        header = response.headers
-        print("Your email is: {}".format(header["email"]))
+        r = response.read()
+        print(r.decode('utf-8'))
