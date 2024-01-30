@@ -6,8 +6,9 @@ the body of the response (decoded in utf-8).
 """
 
 from urllib.request import Request, urlopen
+import urllib.parse
 from sys import argv
 
 
 if __name__ == "__main__":
-    req = Request.po(url=argv[1])
+    req = Request(url=argv[1])
