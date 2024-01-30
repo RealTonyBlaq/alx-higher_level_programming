@@ -6,5 +6,6 @@ the X-Request-Id variable found in the header of the response.
 """
 
 import sys
-import urllib
+from urllib.request import Request, urlopen
 
+if __name__ == 
