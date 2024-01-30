@@ -17,5 +17,5 @@ if __name__ == "__main__":
     value = value.encode('ascii')
     req = Request(url=argv[1], data=value)
     with urlopen(req) as response:
-        data = response.headers
-        print("Your email is: {}".format(data["email"]))
+        header = response.headers
+        print("Your email is: {}".format(header["email"]))
