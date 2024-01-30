@@ -15,4 +15,5 @@ if __name__ == "__main__":
     value = urllib.parse.urlencode(value.encode('utf-8'))
     req = Request(url=argv[1], data=value)
     with urlopen(req) as response:
-        data = response.read()
+        data = response.headers
+        print("Your email is: {}")
