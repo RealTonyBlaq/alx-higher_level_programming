@@ -12,7 +12,7 @@ from sys import argv
 
 if __name__ == "__main__":
     value = {"email": argv[2]}
-    value = urllib.parse.urlencode(value.encode('utf-8'))
+    value = urllib.parse.urlencode(value)
     req = Request(url=argv[1], data=value)
     with urlopen(req) as response:
         data = response.headers
