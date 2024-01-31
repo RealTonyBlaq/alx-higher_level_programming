@@ -15,4 +15,5 @@ if __name__ == "__main__":
     else:
         q = ""
     r = requests.post(url=url, data=q)
-    if type(r.json())  
+    if type(r.json()) in [list, dict] and len():
+
