@@ -15,8 +15,7 @@ if __name__ == "__main__":
     r = requests.get(URL)
     try:
         r.raise_for_status()
-
         data = r.json()
         print(data)
-    except Exception:
-        print("None")
+    except Exception as e:
+        print(e)
