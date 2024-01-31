@@ -16,8 +16,8 @@ if __name__ == "__main__":
         q = ""
     r = requests.post(url=url, data=q)
     try:
-        js = r.json()
-        print("[{}] {}".format(js[0], js[1]))
+        js_object = r.json()
+        print("[{}] {}".format(js_object[0], js_object[1]))
     except requests.exceptions.JSONDecodeError:
         if r.status_code == 204:
             print("No result")
