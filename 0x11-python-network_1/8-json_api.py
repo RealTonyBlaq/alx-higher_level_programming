@@ -11,10 +11,10 @@ from sys import argv
 if __name__ == "__main__":
     url = "http://0.0.0.0:5000/search_user"
     if len(argv) >= 2:
-        q = argv[1]
+        letter = argv[1]
     else:
-        q = ""
-    r = requests.post(url=url, data={q: )
+        letter = ""
+    r = requests.post(url=url, data={"q": letter})
     try:
         js_object = r.json()
         id, name = js_object.get("id"), js_object.get("name")
