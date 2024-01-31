@@ -13,7 +13,7 @@ if __name__ == "__main__":
     if len(argv) == 1:
         q = argv[1]
     else:
-        print(argv[1])
+        print(len(argv))
         q = ""
     r = requests.post(url=url, data=q)
     try:
