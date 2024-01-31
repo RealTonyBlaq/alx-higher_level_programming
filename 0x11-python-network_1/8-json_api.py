@@ -15,7 +15,7 @@ if __name__ == "__main__":
     else:
         letter = ""
     r = requests.post(url=url, data={"q": letter})
-    if r.headers['content-type'] == "application/json":
+    try:
         js_object = r.json()
         id, name = js_object.get("id"), js_object.get("name")
         if name and id is not None:
