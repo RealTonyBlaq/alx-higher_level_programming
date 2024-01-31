@@ -18,4 +18,7 @@ if __name__ == "__main__":
     try:
         js = r.json()
         print("[{}] {}".format(js[0], js[1]))
-    except requests.JSONDecodeError
+    except requests.exceptions.JSONDecodeError:
+        if r.status_code == 204:
+            print("No result")
+        
