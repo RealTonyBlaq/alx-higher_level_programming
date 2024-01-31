@@ -17,4 +17,5 @@ if __name__ == "__main__":
         r.raise_for_status()
 
         data = r.json()
-        if 
+        userID = data.get("id")
+        print
