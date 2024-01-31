@@ -21,4 +21,5 @@ if __name__ == "__main__":
     except requests.exceptions.JSONDecodeError:
         if r.status_code == 204:
             print("No result")
-        
+        else:
+            print("Not a valid JSON")
