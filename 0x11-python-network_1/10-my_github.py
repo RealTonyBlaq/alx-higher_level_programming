@@ -10,7 +10,10 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    url
+    URL = "https://api.github.com/user"
     credentials = (argv[1], argv[2])
-    r = requests.get(url=argv[1], auth=credentials)
-    
+    r = requests.get(url=URL, auth=credentials)
+    try:
+        r.raise_for_status()
+
+        
