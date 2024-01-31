@@ -15,4 +15,4 @@ if __name__ == "__main__":
     r = requests.get(URL)
     data = r.json()
     for key in data.keys():
-        print('{}: {}'.format())
+        print('{}: {}'.format(data['sha'], ))
