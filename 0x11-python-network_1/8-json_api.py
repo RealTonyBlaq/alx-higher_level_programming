@@ -9,6 +9,10 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    url = ""
-    r = requests.get()
+    url = "http://0.0.0.0:5000/search_user"
+    if argv[1]:
+        value = argv[1]
+    else:
+        va
+    r = requests.post(url=url, )
     print(r.headers.get("X-Request-Id"))
