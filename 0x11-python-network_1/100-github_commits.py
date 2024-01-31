@@ -13,4 +13,6 @@ if __name__ == "__main__":
     URL = "https://api.github.com/repos/{}/{}/commits"\
         .format(argv[2], argv[1])
     r = requests.get(URL)
-    data = 
+    data = r.json()
+    for key, value in data.items():
+        
