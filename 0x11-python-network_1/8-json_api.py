@@ -17,4 +17,5 @@ if __name__ == "__main__":
     r = requests.post(url=url, data=q)
     try:
         js = r.json()
-        print("[{}]")
+        print("[{}] {}".format(js[0], js[1]))
+    except requests.JSONDecodeError
