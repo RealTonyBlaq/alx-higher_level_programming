@@ -20,4 +20,4 @@ if __name__ == "__main__":
         userID = data.get("id")
         print(userID) if userID else print("None")
     except Exception:
-        p
+        print("None")
