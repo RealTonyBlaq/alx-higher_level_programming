@@ -10,7 +10,7 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    URL = "https://api.github.com/user/{}/{}"\
+    URL = "https://developer.github.com/v3/repos/commits/"\
         .format(argv[2], argv[1])
     r = requests.get(URL)
     try:
