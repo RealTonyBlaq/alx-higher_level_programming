@@ -18,7 +18,7 @@ if __name__ == "__main__":
     if r.headers['content-type'] == "application/json":
         js_object = r.json()
         id, name = js_object.get("id"), js_object.get("name")
-        if name id is not None:
+        if name and id is not None:
             print("[{}] {}".format(id, name))
         else:
             print("No result")
