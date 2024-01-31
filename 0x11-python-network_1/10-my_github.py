@@ -18,4 +18,6 @@ if __name__ == "__main__":
 
         data = r.json()
         userID = data.get("id")
-        print
+        print(userID) if userID else print("None")
+    except Exception:
+        p
