@@ -14,11 +14,11 @@ if __name__ == "__main__":
         q = argv[1]
     else:
         q = ""
-    r = requests.post(url=url, data=q)
+    r = requests.post(url=url, data={q: )
     try:
         js_object = r.json()
-        id, name = js_object.get("id"), 
-        print("[{}] {}".format(js_object[0], js_object[1]))
+        id, name = js_object.get("id"), js_object.get("name")
+        print("[{}] {}".format(id, name))
     except requests.exceptions.JSONDecodeError:
         if r.status_code == 204:
             print("No result")
