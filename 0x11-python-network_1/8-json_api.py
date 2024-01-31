@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-Script takes in a URL, sends a request to the URL
-and displays the value of the variable X-Request-Id
-in the response header
+Script takes in a letter and sends a POST request to
+http://0.0.0.0:5000/search_user with the letter as a parameter
+and "q" as the key to the value of the argument passed.
 """
 import requests
 from sys import argv
