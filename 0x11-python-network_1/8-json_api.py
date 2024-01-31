@@ -15,12 +15,10 @@ if __name__ == "__main__":
     else:
         letter = ""
     r = requests.post(url=url, data={"q": letter})
-    try:
+    if r.headers['content-type'] == "application/json":
         js_object = r.json()
         id, name = js_object.get("id"), js_object.get("name")
         print("[{}] {}".format(id, name))
-    except requests.exceptions.JSONDecodeError:
-        if r.headers['content-type'] == "application/json":
-            print("No result")
+        print("No result")
         else:
             print("Not a valid JSON")
