@@ -10,6 +10,7 @@ from sys import argv
 
 
 if __name__ == "__main__":
+    url
     credentials = (argv[1], argv[2])
     r = requests.get(url=argv[1], auth=credentials)
     
