@@ -20,7 +20,7 @@ if __name__ == "__main__":
         id, name = js_object.get("id"), js_object.get("name")
         print("[{}] {}".format(id, name))
     except requests.exceptions.JSONDecodeError:
-        if r.headers[''] == 204:
+        if r.headers['content-type'] == "application/json":
             print("No result")
         else:
             print("Not a valid JSON")
