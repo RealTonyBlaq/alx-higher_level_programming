@@ -10,9 +10,10 @@ from sys import argv
 
 if __name__ == "__main__":
     url = "http://0.0.0.0:5000/search_user"
-    if len(argv)1:
+    if len(argv) == 1:
         q = argv[1]
     else:
+        print(argv[1])
         q = ""
     r = requests.post(url=url, data=q)
     try:
