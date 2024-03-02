@@ -3,4 +3,4 @@
 
 const writer = require('fs');
 
-writer.writeFile(process.argv[])
+writer.writeFile(process.argv[2], 'utf-8', )
