@@ -3,4 +3,4 @@
 
 const reader = require('fs')
 
-reader.createReadStream()
+const contents = reader.createReadStream(process.argv)
