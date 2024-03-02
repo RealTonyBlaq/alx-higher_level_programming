@@ -2,5 +2,6 @@
 /* Script writes a string to a file */
 
 const writer = require('fs');
+const fi
 
-writer.writeFile(process.argv[2], 'utf-8')
+writer.writeFile()
