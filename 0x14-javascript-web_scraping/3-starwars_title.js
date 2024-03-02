@@ -9,6 +9,8 @@ const URL = 'https://swapi-api.alx-tools.com/api/films/:id';
 
 request.get(URL, (error, response) => {
   if (error) {
-    console.error
+    console.error(error);
+    return;
   }
+  data = response.toJSON()
 })
