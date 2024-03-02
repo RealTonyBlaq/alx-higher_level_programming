@@ -3,4 +3,4 @@
 
 const reader = require('fs')
 
-reader.createReadStream
+reader.createReadStream()
