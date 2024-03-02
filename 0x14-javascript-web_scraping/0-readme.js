@@ -2,10 +2,11 @@
 /* Script reads content from a file */
 
 const reader = require('fs');
+
 reader.readFile(process.argv[1], 'utf-8', (err, contents) => {
   if (err) {
     console.log(err);
   } else {
-    console.log()
+    console.log(contents);
   }
 });
