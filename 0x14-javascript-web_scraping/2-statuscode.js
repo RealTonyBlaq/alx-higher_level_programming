@@ -5,4 +5,4 @@ const req = require('request');
 const URL = process.argv[2];
 const response = req.get(URL);
 
-console.log('code: ')
+console.log('code:', response.cod)
