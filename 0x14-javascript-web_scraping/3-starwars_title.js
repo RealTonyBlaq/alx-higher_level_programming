@@ -5,7 +5,8 @@ where the episode number matches a given integer
 */
 
 const request = require('request');
-const URL = 'https://swapi-api.alx-tools.com/api/films/:id';
+const id = 
+const URL = 'https://swapi-api.alx-tools.com/api/films/';
 
 request.get(URL, (error, response) => {
   if (error) {
@@ -14,4 +15,4 @@ request.get(URL, (error, response) => {
   }
   data = response.toJSON();
   console.log(data.title);
-})
+});
