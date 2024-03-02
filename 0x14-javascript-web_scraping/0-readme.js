@@ -2,5 +2,5 @@
 /* Script reads content from a file */
 
 const reader = require('fs')
-reader.
+reader.readFile()
 
