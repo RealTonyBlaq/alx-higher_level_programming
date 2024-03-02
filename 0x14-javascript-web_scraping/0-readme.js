@@ -1,4 +1,4 @@
 #!/usr/bin/node
 /* Script reads content from a file */
 
-const reader = 
+const reader = require('fs')
