@@ -27,9 +27,9 @@ request.get(filmURL, (error, response, body) => {
         }
         if (response.statusCode === 200) {
           const person = JSON.parse(body);
-          
+          console.log(person.name);
         }
-      })
+      });
     }
  }
 });
