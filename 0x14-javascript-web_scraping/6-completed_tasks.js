@@ -13,5 +13,5 @@ request.get(URL, (error, response, body) => {
     console.error(error);
     return;
   }
-  
+  if (response.statusCode === 200) 
 })
