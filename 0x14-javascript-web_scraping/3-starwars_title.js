@@ -14,5 +14,5 @@ request.get(URL, (error, response) => {
     return;
   }
   data = response.toJSON();
-  console.log(data.body);
+  console.log(data.body.title);
 });
