@@ -15,7 +15,7 @@ request(URL, (error, response, body) => {
   if (response.statusCode === 200) {
     const data = JSON.parse(body);
     for (d of data) {
-        if 
+        if (d.)
     }
   }
 });
