@@ -14,6 +14,6 @@ request(URL, (error, response, body) => {
   }
   if (response.statusCode === 200) {
     data = JSON.parse(body);
-    console.log('')
+    console.log(data);
   }
-})
+});
