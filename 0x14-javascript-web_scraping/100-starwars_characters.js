@@ -16,7 +16,8 @@ request.get(URL, (error, response, body) => {
  if (response.statusCode === 200) {
     const data = JSON.parse(body)
     for (const character of data.characters) {
-      person = character.split('/');
+      list = character.split('/');
+      person = list[list.length - 2]
     }
  }
 })
