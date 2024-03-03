@@ -21,4 +21,4 @@ request.get(filmURL, (error, response, body) => {
       const person = list[list.length - 2];
     }
  }
-})
+});
