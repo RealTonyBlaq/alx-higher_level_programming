@@ -17,7 +17,7 @@ request.get(URL, (error, response, body) => {
     data = JSON.parse(body);
     tasks = {};
     for (dict of data) {
-      
+      userID = dict.
     }
   }
 })
