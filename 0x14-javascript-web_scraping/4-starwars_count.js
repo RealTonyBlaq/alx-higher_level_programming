@@ -17,7 +17,7 @@ request(URL, (error, response, body) => {
     let count = 0;
     Object.keys(data).forEach(key => {
       if (key === 'url') {
-        value = 
+        value = data[key].split()
       }
     })
       if (id === 18) {
