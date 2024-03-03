@@ -5,7 +5,7 @@ the character “Wedge Antilles” is present
 */
 
 const request = require('request');
-const URL = 'https://swapi-api.alx-tools.com/api/films/';
+const URL = process.argv[2];
 
 request(URL, (error, response, body) => {
   if (error) {
