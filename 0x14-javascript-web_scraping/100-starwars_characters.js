@@ -26,7 +26,7 @@ request.get(filmURL, (error, response, body) => {
           return;
         }
         if (response.statusCode === 200) {
-          const d = JSON.parse(body);
+          const person = JSON.parse(body);
           
         }
       })
