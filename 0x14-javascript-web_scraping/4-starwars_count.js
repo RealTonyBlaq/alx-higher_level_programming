@@ -19,13 +19,11 @@ request(URL, (error, response, body) => {
       if (key === 'url') {
         const value = data[key].split('/');
         const id = value[-1];
-        if (id === 18)
+        if (id === 18) {
+          count++;
+        }
       }
-    })
-      if (id === 18) {
-        count++;
-      }
-    }
+    });
     console.log(count);
   }
 });
