@@ -8,4 +8,10 @@ Accepts one argument:
 const request = require('request');
 const URI = process.argv[2];
 
-request.get(URL, (error, response, body))
+request.get(URL, (error, response, body) => {
+  if (error) {
+    console.error(error);
+    return;
+  }
+  
+})
