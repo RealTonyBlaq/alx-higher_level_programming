@@ -21,5 +21,4 @@ request.get(filmURL, (error, response, body) => {
 
     }
     };
-  }
 });
