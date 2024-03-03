@@ -27,4 +27,4 @@ request.get(URL, (error, response, body) => {
       tasks[userID] = taskCount;
     }
   }
-})
+});
