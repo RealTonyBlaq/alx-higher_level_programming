@@ -38,7 +38,6 @@ request.get(filmURL, (error, response, body) => {
       });
     };
 
-
     data.characters.forEach(fetchCharacterDetails);
   }
 });
