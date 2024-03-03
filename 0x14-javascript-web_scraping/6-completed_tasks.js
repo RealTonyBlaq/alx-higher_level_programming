@@ -6,4 +6,6 @@ Accepts one argument:
 */
 
 const request = require('request');
-const URI = 
+const URI = process.argv[2];
+
+
