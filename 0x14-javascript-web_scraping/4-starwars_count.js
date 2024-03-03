@@ -18,7 +18,8 @@ request(URL, (error, response, body) => {
     Object.keys(data).forEach(key => {
       if (key === 'url') {
         const value = data[key].split('/');
-        if (val)
+        const id = value[-1];
+        if (id === 18)
       }
     })
       if (id === 18) {
