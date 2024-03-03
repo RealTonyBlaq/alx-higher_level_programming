@@ -15,12 +15,11 @@ request(URL, (error, response, body) => {
   if (response.statusCode === 200) {
     const data = JSON.parse(body);
     let count = 0;
-    for (character of data.results.characters){
-      const value = character.split('/');
-      const id = Number(value[value.length - 2]);
-      if (id === 18) {
-        count++;
-      }
+    for (dict of data.results){
+      value = dict.url.split('/');
+      id = Number(value[value.length - 2]);
+      if (id === 18)
+      count++;
     }
     console.log(count);
   }
