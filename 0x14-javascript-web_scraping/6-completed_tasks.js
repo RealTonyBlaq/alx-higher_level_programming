@@ -18,6 +18,7 @@ request.get(URL, (error, response, body) => {
     tasks = {};
     for (const dict of data) {
       const userID = dict.userID
+      let taskCount = 0;
       for (const d of data) {
         if ()
       }
