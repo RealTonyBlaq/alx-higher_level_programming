@@ -15,7 +15,7 @@ request(URL, (error, response, body) => {
   if (response.statusCode === 200) {
     const data = JSON.parse(body);
     let count = 0;
-    for (d of data) {
+    for (const d of data) {
       if (Number(d.url.split('/')[-1]) === 18) {
         count++;
       }
