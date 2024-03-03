@@ -23,11 +23,11 @@ request.get(filmURL, (error, response, body) => {
         console.error(error);
         return;
       }
-            if (response.statusCode === 200) {
-              const person = JSON.parse(body);
-              console.log(person.name);
-            }
-          });
+      if (response.statusCode === 200) {
+        const person = JSON.parse(body);
+        console.log(person.name);
+      }
+        });
     }
     };
 });
