@@ -13,7 +13,7 @@ request(URL, (error, response, body) => {
     return;
   }
   if (response.statusCode === 200) {
-    const data = body.toJSON();
+    const data = JSON.parse(body);
     console.log(data);
   }
 });
