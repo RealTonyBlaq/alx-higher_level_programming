@@ -8,4 +8,4 @@ Accepts one argument:
 const request = require('request');
 const URI = process.argv[2];
 
-
+request.get
