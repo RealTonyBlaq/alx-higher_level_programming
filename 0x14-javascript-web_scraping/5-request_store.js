@@ -8,5 +8,7 @@ Takes in two arguments:
 
 const request = require('request');
 const fs = require('fs');
+const URL = process.argv[2];
+const filename = process.argv[3];
 
 
