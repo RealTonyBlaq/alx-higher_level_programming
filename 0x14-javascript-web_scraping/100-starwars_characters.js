@@ -19,6 +19,7 @@ request.get(filmURL, (error, response, body) => {
     for (const character of data.characters) {
       const list = character.split('/');
       const person = list[list.length - 2];
+      request.get(peopleURL + ``)
     }
  }
 });
