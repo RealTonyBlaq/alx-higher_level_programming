@@ -16,10 +16,10 @@ request.get(URL, (error, response, body) => {
   if (response.statusCode === 200) {
     data = JSON.parse(body);
     tasks = {};
-    for (dict of data) {
+    for (const dict of data) {
       userID = dict.userID
       for (d of data) {
-        
+
       }
     }
   }
