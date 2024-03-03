@@ -13,5 +13,7 @@ request.get(URL, (error, response, body) => {
     console.error(error);
     return;
  }
- if 
+ if (response.statusCode === 200) {
+    data = JSON.parse(body)
+ }
 })
