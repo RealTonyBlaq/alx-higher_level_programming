@@ -17,7 +17,7 @@ request.get(URL, (error, response, body) => {
     const data = JSON.parse(body);
     const tasks = {};
     for (const dict of data) {
-      const userID = dict.userID
+      let userID = dict.userID
       let taskCount = 0;
       for (const d of data) {
         if (d.userId === userID && d.completed === true) {
