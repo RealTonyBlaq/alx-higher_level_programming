@@ -15,7 +15,8 @@ request(URL, (error, response, body) => {
   if (response.statusCode === 200) {
     const data = JSON.parse(body);
     let count = 0;
-    for (dict of data.results){
+    for (const dict of data.results){
+      for (const character of dict.)
       value = dict.url.split('/');
       id = Number(value[value.length - 2]);
       if (id === 18)
