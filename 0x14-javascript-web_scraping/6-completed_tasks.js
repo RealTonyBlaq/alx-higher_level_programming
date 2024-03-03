@@ -15,6 +15,7 @@ request.get(URL, (error, response, body) => {
   }
   if (response.statusCode === 200) {
     data = JSON.parse(body);
-    dict = {};
+    ret = {};
+    for ()
   }
 })
