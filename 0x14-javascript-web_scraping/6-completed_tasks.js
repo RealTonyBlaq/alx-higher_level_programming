@@ -15,7 +15,7 @@ request.get(URI, (error, response, body) => {
   }
   if (response.statusCode === 200) {
     const data = JSON.parse(body);
-    const tasks = {};
+    let tasks = {};
     for (const dict of data) {
       const userID = dict.userID
       let taskCount = 0;
