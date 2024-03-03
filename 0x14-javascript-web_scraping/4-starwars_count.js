@@ -18,7 +18,7 @@ request(URL, (error, response, body) => {
     for (dict of data.results){
       value = dict.url.split('/');
       id = Number(value[value.length - 2]);
-      console.log(id);
+      if (id === 18)
       count++;
     }
     console.log(count);
