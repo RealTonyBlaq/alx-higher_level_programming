@@ -14,10 +14,11 @@ request(URL, (error, response, body) => {
   }
   if (response.statusCode === 200) {
     const data = JSON.parse(body);
+    
     for (d of data) {
-        if (Number(d.url.split('/')[-1]) === 18) {
-            
-        }
+      if (Number(d.url.split('/')[-1]) === 18) {
+
+      }
     }
   }
 });
