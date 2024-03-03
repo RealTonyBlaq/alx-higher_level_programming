@@ -16,11 +16,12 @@ request(URL, (error, response, body) => {
     const data = JSON.parse(body);
     let count = 0;
     for (const dict of data.results){
-      for (const character of dict.)
-      value = dict.url.split('/');
-      id = Number(value[value.length - 2]);
+      for (const character of dict.characters){
+        value = dict.url.split('/');
+        id = Number(value[value.length - 2]);
       if (id === 18)
       count++;
+      }
     }
     console.log(count);
   }
