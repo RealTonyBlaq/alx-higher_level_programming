@@ -15,7 +15,9 @@ request(URL, (error, response, body) => {
   if (response.statusCode === 200) {
     const data = JSON.parse(body);
     let count = 0;
-    for ()
+    for (const d in data) {
+      console.log(data.url);
+    }
     console.log(count);
   }
 });
