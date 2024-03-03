@@ -16,7 +16,8 @@ request(URL, (error, response, body) => {
     const data = JSON.parse(body);
     let count = 0;
     for (dict of data.results){
-      value = dict.url.split('')
+      value = dict.url.split('/');
+      id = value[value.length - 2]
       count++;
     }
     console.log(count);
