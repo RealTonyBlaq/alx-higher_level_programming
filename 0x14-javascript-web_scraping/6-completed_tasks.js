@@ -21,8 +21,9 @@ request.get(URL, (error, response, body) => {
       let taskCount = 0;
       for (const d of data) {
         if (d.userId === userID && d.completed === true) {
-          
+          taskCount++;
         }
+        
       }
     }
   }
