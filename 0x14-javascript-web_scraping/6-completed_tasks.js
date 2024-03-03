@@ -23,8 +23,8 @@ request.get(URL, (error, response, body) => {
         if (d.userId === userID && d.completed === true) {
           taskCount++;
         }
-        tasks[]
       }
+      ta
     }
   }
 })
