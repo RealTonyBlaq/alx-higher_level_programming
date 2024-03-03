@@ -19,7 +19,11 @@ request.get(filmURL, (error, response, body) => {
     for (const character of data.characters) {
       const list = character.split('/');
       const id = list[list.length - 2];
-      request.get(peopleURL + `${id}`, (error, response, body))
+      request.get(peopleURL + `${id}`, (error, response, body) => {
+        if (error) {
+          console.error
+        }
+      })
     }
  }
 });
