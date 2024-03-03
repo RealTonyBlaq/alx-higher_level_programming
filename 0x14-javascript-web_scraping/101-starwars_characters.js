@@ -18,15 +18,15 @@ request.get(filmURL, (error, response, body) => {
     const characters = data.characters;
     for (const personURL of characters) {
       request.get(personURL, (error, response, body) => {
-      if (error) {
-        console.error(error);
-        return;
-      }
-      if (response.statusCode === 200) {
-        const person = JSON.parse(body);
-        console.log(person.name);
-      }
+        if (error) {
+          console.error(error);
+          return;
+        }
+        if (response.statusCode === 200) {
+          const person = JSON.parse(body);
+          console.log(person.name);
+        }
       });
     }
-    };
+  }
 });
