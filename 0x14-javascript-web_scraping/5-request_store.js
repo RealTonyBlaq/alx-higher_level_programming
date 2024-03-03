@@ -6,4 +6,7 @@ Takes in two arguments:
     the filename
 */
 
-const request = require('')
+const request = require('request');
+const fs = require('fs');
+
+
