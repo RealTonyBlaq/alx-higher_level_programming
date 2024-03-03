@@ -15,6 +15,9 @@ const filename = process.argv[3];
 request.get(URL, (error, response, body) => {
   if (error) {
     console.error(error);
+    return;
+  }
+  if (response.statusCode === 200) {
     
   }
 });
