@@ -18,10 +18,11 @@ request(URL, (error, response, body) => {
     Object.keys(data).forEach(key => {
       if (key === 'url') {
         const value = data[key].split('/');
+        console.log()
         /*const id = Number(value[value.length - 1]);
         if (id === 18) {
           count++;
-        }
+        }*/
       }
     });
     console.log(count);
