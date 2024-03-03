@@ -8,7 +8,6 @@ Takes in two arguments:
 
 const request = require('request');
 const fs = require('fs');
-const { error } = require('console');
 const URL = process.argv[2];
 const filename = process.argv[3];
 
@@ -18,6 +17,6 @@ request.get(URL, (error, response, body) => {
     return;
   }
   if (response.statusCode === 200) {
-    
+    fs.writeFile(filename)
   }
 });
