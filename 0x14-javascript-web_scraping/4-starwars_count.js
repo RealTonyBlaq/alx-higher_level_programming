@@ -14,9 +14,8 @@ request(URL, (error, response, body) => {
   }
   if (response.statusCode === 200) {
     const data = JSON.parse(body);
-    console.log(data);
     let count = 0;
-    Object.keys()
+    Object.keys(data).forEach(key =>)
       if (id === 18) {
         count++;
       }
