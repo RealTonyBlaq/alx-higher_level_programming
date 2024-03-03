@@ -17,7 +17,7 @@ request(URL, (error, response, body) => {
     console.log(data);
     let count = 0;
     for (const key in data) {
-        const d
+        const id = key.url
       if (id === 18) {
         count++;
       }
