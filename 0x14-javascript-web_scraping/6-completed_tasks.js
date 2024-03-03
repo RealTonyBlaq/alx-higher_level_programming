@@ -17,9 +17,9 @@ request.get(URL, (error, response, body) => {
     data = JSON.parse(body);
     tasks = {};
     for (const dict of data) {
-      userID = dict.userID
-      for (d of data) {
-
+      const userID = dict.userID
+      for (const d of data) {
+        if ()
       }
     }
   }
