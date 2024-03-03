@@ -15,17 +15,16 @@ request.get(URI, (error, response, body) => {
   }
   if (response.statusCode === 200) {
     const data = JSON.parse(body);
-    let tasks = {};
-    for (const dict of data) {
-      const userID = dict.userID
-      let taskCount = 0;
-      for (const d of data) {
-        if (d.userId === userID && d.completed === true) {
-          taskCount++;
-        }
+    
+    // Using reduce to count completed tasks for each user
+    const tasks = data.reduce((acc, task) => {
+      const userID = task.userId;
+      if (task.completed === true) {
+        acc[userID] = (acc[userID] || 0) + 1;
       }
-      tasks[userID] = taskCount;
-    }
+      return acc;
+    }, {});
+
     console.log(tasks);
   }
 });
