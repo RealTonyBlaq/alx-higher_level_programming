@@ -16,7 +16,9 @@ request.get(filmURL, (error, response, body) => {
   }
   if (response.statusCode === 200) {
     const data = JSON.parse(body);
-    for (const character of data.characters) {
+    const charactersList = [];
+
+    const fetchCharacterDetails = (character) => {
       const list = character.split('/');
       const id = list[list.length - 2];
 
@@ -27,9 +29,16 @@ request.get(filmURL, (error, response, body) => {
         }
         if (response.statusCode === 200) {
           const person = JSON.parse(body);
-          console.log(person.name);
+          charactersList.push(person.name);
+
+          if (charactersList.length === data.characters.length) {
+            charactersList.forEach((elem) => console.log(elem));
+          }
         }
       });
-    }
+    };
+
+
+    data.characters.forEach(fetchCharacterDetails);
   }
 });
