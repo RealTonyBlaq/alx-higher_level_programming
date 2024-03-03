@@ -17,7 +17,7 @@ request(URL, (error, response, body) => {
     let count = 0;
     for (const dict of data.results){
       for (const character of dict.characters){
-        const value = dict.url.split('/');
+        const value = character.split('/');
         const id = Number(value[value.length - 2]);
         if (id === 18) {
           count++;
