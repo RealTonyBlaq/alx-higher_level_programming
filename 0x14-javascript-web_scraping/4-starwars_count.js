@@ -20,6 +20,6 @@ request(URL, (error, response, body) => {
         count++;
       }
     }
-    console.log()
+    console.log(count);
   }
 });
