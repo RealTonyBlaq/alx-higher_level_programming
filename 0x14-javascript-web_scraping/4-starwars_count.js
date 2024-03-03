@@ -16,7 +16,7 @@ request(URL, (error, response, body) => {
     const data = JSON.parse(body);
     let count = 0;
     Object.keys(data).forEach(key => {
-      
+      console.log(data[key]);
       if (key === 'url') {
         const value = data[key].split('/');
         console.log(value);
