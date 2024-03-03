@@ -14,6 +14,7 @@ request.get(URL, (error, response, body) => {
     return;
   }
   if (response.statusCode === 200) {
-    data = JSON.parse()
+    data = JSON.parse(body);
+    dict = {};
   }
 })
