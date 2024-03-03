@@ -17,7 +17,7 @@ request.get(URL, (error, response, body) => {
     return;
   }
   if (response.statusCode === 200) {
-    fs.writeFile(filename, body, (err) => {
+    fs.writeFile(filename, body, 'utf-8', (err) => {
       if (err) {
         console.error(err);
       }
