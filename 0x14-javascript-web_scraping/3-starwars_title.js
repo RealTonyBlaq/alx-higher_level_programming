@@ -13,6 +13,6 @@ request.get(URL, (error, response) => {
     console.error(error);
     return;
   }
-  data = response.;
+  data = response.toJSON();
   console.log(data.title);
 });
