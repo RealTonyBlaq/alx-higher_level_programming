@@ -18,8 +18,8 @@ request.get(filmURL, (error, response, body) => {
     const data = JSON.parse(body)
     for (const character of data.characters) {
       const list = character.split('/');
-      const person = list[list.length - 2];
-      request.get(peopleURL + `${person}`, (error, response, body))
+      const id = list[list.length - 2];
+      request.get(peopleURL + `${id}`, (error, response, body))
     }
  }
 });
