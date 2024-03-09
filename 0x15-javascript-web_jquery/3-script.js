@@ -1,3 +1,3 @@
 function addRedClass () {
-  $()
+  $('header').a
 }
