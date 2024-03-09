@@ -2,4 +2,6 @@ function updateHeader () {
   $('header').text('New Header!!!');
 }
 
-$(document).ready(function ())
+$(document).ready(function () {
+  $('DIV#update_header').on('click', updateHeader());
+})
