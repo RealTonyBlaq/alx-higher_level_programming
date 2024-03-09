@@ -1,3 +1,5 @@
 function toggleClass () {
-  if ($('header').hasClass('red') && )
+  if ($('header').hasClass('red') && $('header').hasClass('blue')) {
+    $('header').removeClass('blue');
+  }
 }
