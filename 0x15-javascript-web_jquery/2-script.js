@@ -1,10 +1,10 @@
 $(document).ready(function () {
-    function setColor() {
-      $('header').css('color', 'red');
-    }
-  });
+  function setColor() {
+    $('header').css('color', 'red');
+  }
+});
   
-  $('header').on('click', function() {
+$('header').on('click', function() {
     setColor();
   });
   
