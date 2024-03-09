@@ -1,1 +1,3 @@
-fun
+function updateHeader () {
+  $('header').
+}
