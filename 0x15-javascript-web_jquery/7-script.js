@@ -7,7 +7,7 @@ function getData () {
       const text = data.name;
       $('DIV#character').text(text);
     }
-  })
+  });
 }
 
 $(document).ready(function () {
