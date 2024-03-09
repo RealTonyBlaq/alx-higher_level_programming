@@ -3,6 +3,6 @@ function toggleClass () {
     $('header').removeClass('blue');
   } else if ($('header').hasClass('red')) {
     $('header').removeClass('red');
-    $('header')
-  }
+    $('header').addClass('blue');
+  } else if ($('header').has)
 }
