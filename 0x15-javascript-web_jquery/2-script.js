@@ -5,6 +5,5 @@ $(document).ready(function () {
 });
   
 $('header').on('click', function() {
-    setColor();
-  });
-  
+  setColor();
+});
