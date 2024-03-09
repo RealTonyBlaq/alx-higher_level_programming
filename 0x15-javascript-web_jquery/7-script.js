@@ -5,7 +5,7 @@ function getData () {
     dataType: 'json',
     success: function (data) {
       const text = data.name;
-      $('')
+      $('DIV#character').text(text);
     }
   })
 }
