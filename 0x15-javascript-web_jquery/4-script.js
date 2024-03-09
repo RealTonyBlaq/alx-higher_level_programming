@@ -1,3 +1,3 @@
 function toggleClass () {
-  if ()
+  if ($('header').hasClass('red') && )
 }
