@@ -5,6 +5,6 @@ function addList () {
 
 $(document).ready(function () {
   $('DIV#add_item').on('click', function () {
-    addList
-  })
-})
+    addList();
+  });
+});
