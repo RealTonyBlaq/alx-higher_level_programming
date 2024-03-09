@@ -5,6 +5,8 @@ function toggleClass () {
     $('header').removeClass('red');
     $('header').addClass('blue');
   } else if ($('header').hasClass('blue')) {
+    $('header').removeClass('blue');
+    $('header').addClass('red');
     
   }
 }
