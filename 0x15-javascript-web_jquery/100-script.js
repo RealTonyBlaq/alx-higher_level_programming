@@ -4,5 +4,5 @@ function updateColor () {
 }
 
 $(document).ready(function () {
-  
-})
+  updateColor();
+});
