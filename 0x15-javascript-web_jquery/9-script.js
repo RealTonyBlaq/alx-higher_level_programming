@@ -1,4 +1,4 @@
-function fetch () {
+function fetchValue () {
   $.ajax({
     url: 'https://hellosalut.stefanbohacek.dev/?lang=fr',
     method: 'GET',
@@ -11,5 +11,5 @@ function fetch () {
 }
 
 $(document).ready(function () {
-    fetch
-})
+    fetchValue();
+});
