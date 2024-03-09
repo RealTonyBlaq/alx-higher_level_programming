@@ -4,7 +4,8 @@ function getData () {
     method: 'GET',
     dataType: 'json',
     success: function (data) {
-      
+      const text = data.name;
+      $('')
     }
   })
 }
