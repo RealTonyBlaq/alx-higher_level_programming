@@ -12,3 +12,7 @@ function listTitles () {
     }
   });
 }
+
+$(document).ready(function () {
+  listTitles();
+});
