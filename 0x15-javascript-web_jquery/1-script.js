@@ -4,4 +4,4 @@ function setColor() {
 
 $(document).ready(function () {
   setColor();
-})
+});
