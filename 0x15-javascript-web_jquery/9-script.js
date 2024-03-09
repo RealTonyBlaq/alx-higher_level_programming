@@ -11,5 +11,5 @@ function fetchValue () {
 }
 
 $(document).ready(function () {
-    fetchValue();
+  fetchValue();
 });
