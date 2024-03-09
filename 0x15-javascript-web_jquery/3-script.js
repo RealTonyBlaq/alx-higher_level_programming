@@ -1,3 +1,4 @@
 function addRedClass () {
-  $('header').addClass('')
+  if $('header').
+  $('header').addClass('red')
 }
