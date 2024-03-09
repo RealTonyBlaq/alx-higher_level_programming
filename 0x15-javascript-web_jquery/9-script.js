@@ -9,3 +9,7 @@ function fetch () {
     }
   });
 }
+
+$(document).ready(function () {
+    fetch
+})
