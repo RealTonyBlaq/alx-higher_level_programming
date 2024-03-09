@@ -6,7 +6,8 @@ $(document).ready(function () {
       method: 'GET',
       dataType: 'json',
       success: function (data) {
+        $('')
       }
-  })
+    });
   });
 });
