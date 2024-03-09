@@ -1,4 +1,6 @@
 function updateColor () {
   const header = document.querySelector('header');
-  header.style.color = ''
+  header.style.color = '#FF0000';
 }
+
+
