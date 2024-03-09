@@ -4,7 +4,7 @@ function fetch () {
     method: 'GET',
     dataType: 'json',
     success: function (data) {
-        
+      
     }
   })
 }
