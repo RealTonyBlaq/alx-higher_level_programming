@@ -2,4 +2,6 @@ function setColor() {
   $('header').css('color', 'red');
 }
 
-$(document).ready(function )
+$(document).ready(function () {
+  setColor();
+})
