@@ -4,7 +4,8 @@ function fetch () {
     method: 'GET',
     dataType: 'json',
     success: function (data) {
-      const 
+      const text = data.hello;
+      $('DIV#hello').text(text);
     }
-  })
+  });
 }
