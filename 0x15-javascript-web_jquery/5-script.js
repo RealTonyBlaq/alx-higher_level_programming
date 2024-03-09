@@ -3,4 +3,8 @@ function addList () {
   $('UL.my_list').append(item);
 }
 
-$(document).ready(function () {})
+$(document).ready(function () {
+  $('DIV#add_item').on('click', function () {
+    addList
+  })
+})
