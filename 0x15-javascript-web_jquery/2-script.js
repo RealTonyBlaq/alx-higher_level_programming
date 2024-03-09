@@ -1,2 +1,3 @@
-function
-$('DIV#red_header')
+function setColor() {
+    $('DIV#red_header')
+}
