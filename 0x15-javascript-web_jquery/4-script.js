@@ -3,12 +3,12 @@ function toggleClass () {
     $('header').removeClass('green');
   } else if ($('header').hasClass('red')) {
     $('header').removeClass('red');
-    $('header').addClass('');
-  } else if ($('header').hasClass('blue')) {
-    $('header').removeClass('blue');
+    $('header').addClass('green');
+  } else if ($('header').hasClass('green')) {
+    $('header').removeClass('green');
     $('header').addClass('red');
   } else {
-    $('header').addClass('blue');
+    $('header').addClass('green');
   }
 }
 
