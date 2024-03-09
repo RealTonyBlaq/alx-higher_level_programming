@@ -6,5 +6,7 @@ $(document).ready(function () {
   $('DIV#remove_item').on('click', function () {
     $('UL.my_list').remove('li:last');
   });
-  $()
+  $('DIV#clear_list').on('click', function () {
+    $('UL.my_list').remove('li:last')
+  })
 });
