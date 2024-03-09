@@ -7,6 +7,6 @@ $(document).ready(function () {
     $('UL.my_list').remove('li:last');
   });
   $('DIV#clear_list').on('click', function () {
-    $('UL.my_list').remove('li:last')
-  })
+    $('UL.my_list').empty();
+  });
 });
