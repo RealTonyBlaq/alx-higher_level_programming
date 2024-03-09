@@ -6,7 +6,7 @@ function listTitles () {
     success: function (data) {
       for (const result of data.results) {
         const title = result.title;
-        $
+        const item = $('<li></li>').text()
       }
     }
   });
