@@ -12,4 +12,6 @@ function toggleClass () {
   }
 }
 
-
+$(document).ready(function () {
+  $('')
+})
