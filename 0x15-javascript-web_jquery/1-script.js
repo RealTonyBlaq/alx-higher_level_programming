@@ -1,3 +1,3 @@
 function setColor() {
-  $('header').css
+  $('header').css('text-color', '#FF0000');
 }
