@@ -1,3 +1,5 @@
 function updateHeader () {
-  $('header').
+  $('header').text('New Header!!!');
 }
+
+$(document).ready(function ())
