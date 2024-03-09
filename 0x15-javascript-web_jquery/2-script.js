@@ -3,7 +3,7 @@ function setColor () {
 }
 
 $(document).ready(function () {
-  $('header').on('click', function() {
+  $('header').on('click', function () {
     setColor();
   });
 });
