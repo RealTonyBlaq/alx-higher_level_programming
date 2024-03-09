@@ -1,3 +1,4 @@
 $(document).ready(function () {
-  $('INPUT#language_code')
+  const langCode = $('INPUT#language_code').attr();
+
 });
