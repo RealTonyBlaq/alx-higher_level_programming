@@ -4,4 +4,4 @@ function updateHeader () {
 
 $(document).ready(function () {
   $('DIV#update_header').on('click', updateHeader());
-})
+});
