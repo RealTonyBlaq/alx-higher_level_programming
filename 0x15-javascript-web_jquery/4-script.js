@@ -13,7 +13,7 @@ function toggleClass () {
 }
 
 $(document).ready(function () {
-  $('DIV#toggle_header').on('click', function() {
-    
-  })
-})
+  $('DIV#toggle_header').on('click', function () {
+    toggleClass();
+  });
+});
