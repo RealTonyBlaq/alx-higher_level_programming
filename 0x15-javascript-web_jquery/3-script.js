@@ -5,5 +5,5 @@ function addRedClass () {
 }
 
 $(document).ready(function () {
-  
+  $('')
 })
