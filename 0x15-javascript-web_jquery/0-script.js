@@ -1,2 +1,4 @@
 #!/usr/bin/node
-/* Script updates
+/* Script updates the header tag of an html */
+
+const header = document.q
