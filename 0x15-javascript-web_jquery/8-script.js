@@ -5,7 +5,8 @@ function listTitles () {
     dataType: 'json',
     success: function (data) {
       for (const result of data.results) {
-        const title = da
+        const title = result.title;
+        
       }
     }
   });
