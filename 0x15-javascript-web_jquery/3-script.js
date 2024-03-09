@@ -2,7 +2,7 @@ function addRedClass () {
   if (! $('header').hasClass('red')) {
     $('header').addClass('red');
   } else {
-    $('header').addClass
+    $('header').css('color', 'blue');
   }
 }
 
