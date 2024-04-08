@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 # Script sends a POST request
-
-curl 
+curl -X POST "$1" -d 
