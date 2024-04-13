@@ -15,8 +15,7 @@ request.get(filmURL, (error, response, body) => {
   }
   if (response.statusCode === 200) {
     const data = JSON.parse(body);
-    const characters = data.characters;
-    for (const personURL of characters) {
+    for (const personURL of data.characters) {
       request.get(personURL, (error, response, body) => {
         if (error) {
           console.error(error);
