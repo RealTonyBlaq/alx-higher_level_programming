@@ -1,7 +1,7 @@
 #!/usr/bin/node
 /*
 Script that prints all characters of a Star Wars movie:
-    "Return of the Jedi"
+using "Return of the Jedi"
 */
 
 const request = require('request');
