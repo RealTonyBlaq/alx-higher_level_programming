@@ -19,5 +19,5 @@ if __name__ == "__main__":
         data = r.json()
         userID = data.get("id")
         print(userID) if userID else print("None")
-    except Exception:
-        print("None")
+    except Exception as e:
+        print("None", e)
